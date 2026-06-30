@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nero Development</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav style="position: sticky; top: 0; z-index: 100; background: rgba(11,10,9,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06); padding: 0 40px; display: flex; align-items: center; justify-content: space-between; height: 58px;">
+  <div style="display: flex; align-items: center; gap: 9px;">
+    <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+      <circle cx="10" cy="10" r="8.5" stroke="#FF7138" stroke-width="1.5"></circle>
+      <circle cx="10" cy="10" r="3" fill="#FF7138"></circle>
+    </svg>
+    <span style="font-size: 13px; font-weight: 700; letter-spacing: -0.01em; color: #FAFAF8;">Nero Development</span>
+  </div>
+  <div style="display: flex; align-items: center; gap: 36px;">
+    <a href="#data" style="font-size: 12px; color: rgba(250,250,248,0.45);">The Data</a>
+    <a href="#pipeline" style="font-size: 12px; color: rgba(250,250,248,0.45);">Pipeline</a>
+    <a href="#compliance" style="font-size: 12px; color: rgba(250,250,248,0.45);">Compliance</a>
+    <a href="#contact" style="display: inline-flex; align-items: center; gap: 6px; background: #FF7138; color: #fff; font-size: 12px; font-weight: 600; padding: 8px 16px; border-radius: 4px; letter-spacing: 0.01em;">Discuss a pilot</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="position: relative; min-height: 100vh; background: #0B0A09; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding: 160px 56px 72px;">
+  <img src="assets/images/hero-bg.jpg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.65;" alt="">
+  <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(11,10,9,0.82) 0%, rgba(11,10,9,0.45) 50%, rgba(11,10,9,0.72) 100%);"></div>
+
+  <!-- HUD overlay top-left -->
+  <div style="position: absolute; top: 32px; left: 56px; font-family: monospace; font-size: 10px; color: rgba(255,255,255,0.3); line-height: 1.8; letter-spacing: 0.06em;">
+    <div>EGO VIDEO DATA</div>
+    <div>SEQ. 0042 · FRAME 003814</div>
+    <div>CAMERA_01 · 30 FPS</div>
+  </div>
+
+  <!-- HUD overlay top-right -->
+  <div style="position: absolute; top: 32px; right: 56px; font-family: monospace; font-size: 10px; color: rgba(255,255,255,0.3); line-height: 1.8; letter-spacing: 0.06em; text-align: right;">
+    <div>STATE OK · TRACKING</div>
+    <div>DEPTH (m) 0.5 — 5.0</div>
+  </div>
+
+  <div style="position: relative; z-index: 2; max-width: 860px; text-align: center;" data-comment-anchor="3b438af15d-div">
+    <p style="font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: #FF7138; margin-bottom: 24px; font-weight: 500;">Egocentric training data · Nero Development</p>
+    <h1 style="font-size: clamp(48px, 6vw, 88px); font-weight: 700; line-height: 1.02; letter-spacing: -0.03em; color: #FAFAF8; margin-bottom: 28px; text-wrap: pretty;">
+      The dexterity data<br>
+      <span style="color: #FF7138;">your models need.</span>
+    </h1>
+    <p style="font-size: 16px; line-height: 1.7; color: rgba(250,250,248,0.6); max-width: 520px; margin: 0 auto 40px;">Professional cleaning crews. Real homes. Multi-hour, unconstrained egocentric footage — dense hand-object interaction at scale, delivered with full privacy compliance.</p>
+    <div style="display: flex; align-items: center; justify-content: center; gap: 16px;">
+      <a href="#contact" style="display: inline-flex; align-items: center; gap: 8px; background: #FF7138; color: #fff; font-size: 14px; font-weight: 600; padding: 14px 28px; border-radius: 5px; letter-spacing: 0.01em;">Discuss a pilot</a>
+    </div>
+  </div>
+</section>
+
+<!-- THE INSIGHT — why cleaning crews -->
+<section style="background: #FAFAF8; padding: 96px 56px; border-bottom: 1px solid rgba(0,0,0,0.07);">
+  <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; max-width: 1200px;">
+    <div>
+      <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(17,16,16,0.35); margin-bottom: 16px; font-weight: 500;">Why this works</p>
+      <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #111010;">Cleaning crews are the world's best robot teachers.</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 40px; padding-top: 8px;">
+      <div>
+        <div style="width: 32px; height: 2px; background: #FF7138; margin-bottom: 20px;"></div>
+        <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 10px; color: #111010; line-height: 1.3;">Naturally dense manipulation</h3>
+        <p style="font-size: 13px; line-height: 1.75; color: rgba(17,16,16,0.52);">Every shift is 2–6 hours of continuous hand-object interaction. No idle time, no breaks from dexterous tasks.</p>
+      </div>
+      <div>
+        <div style="width: 32px; height: 2px; background: #FF7138; margin-bottom: 20px;"></div>
+        <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 10px; color: #111010; line-height: 1.3;">Unscripted, uncoached behavior</h3>
+        <p style="font-size: 13px; line-height: 1.75; color: rgba(17,16,16,0.52);">Real professionals doing real work. The authenticity scripted data collection can never replicate.</p>
+      </div>
+      <div>
+        <div style="width: 32px; height: 2px; background: #FF7138; margin-bottom: 20px;"></div>
+        <h3 style="font-size: 14px; font-weight: 700; margin-bottom: 10px; color: #111010; line-height: 1.3;">Residential variance built-in</h3>
+        <p style="font-size: 13px; line-height: 1.75; color: rgba(17,16,16,0.52);">Different homes every session — varied layouts, objects, lighting, and clutter. Generalization data by design.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPECS — dark section -->
+<section style="background: #0F0E0D; padding: 80px 56px; border-bottom: 1px solid rgba(255,255,255,0.04);">
+  <div style="max-width: 1200px;">
+    <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 56px; font-weight: 500;">Capture specifications</p>
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.07);">
+      <div style="padding: 40px 40px 40px 0; border-right: 1px solid rgba(255,255,255,0.07);">
+        <p style="font-size: 48px; font-weight: 700; color: #FAFAF8; letter-spacing: -0.03em; line-height: 1;">4K</p>
+        <p style="font-size: 13px; color: #FF7138; margin-top: 4px; font-weight: 500;">60 fps</p>
+        <p style="font-size: 12px; color: rgba(250,250,248,0.35); margin-top: 12px; line-height: 1.6;">H.264 / H.265 — continuous recording, no manual stop/start</p>
+      </div>
+      <div style="padding: 40px 40px; border-right: 1px solid rgba(255,255,255,0.07);">
+        <p style="font-size: 48px; font-weight: 700; color: #FAFAF8; letter-spacing: -0.03em; line-height: 1;">2–6</p>
+        <p style="font-size: 13px; color: #FF7138; margin-top: 4px; font-weight: 500;">hrs / session</p>
+        <p style="font-size: 12px; color: rgba(250,250,248,0.35); margin-top: 12px; line-height: 1.6;">Full-shift wear — the entire cleaning session, not edited highlights</p>
+      </div>
+      <div style="padding: 40px 40px; border-right: 1px solid rgba(255,255,255,0.07);">
+        <p style="font-size: 48px; font-weight: 700; color: #FAFAF8; letter-spacing: -0.03em; line-height: 1;">6-DoF</p>
+        <p style="font-size: 13px; color: #FF7138; margin-top: 4px; font-weight: 500;">IMU + depth</p>
+        <p style="font-size: 12px; color: rgba(250,250,248,0.35); margin-top: 12px; line-height: 1.6;">Per-frame synchronized IMU and structured-light depth streams</p>
+      </div>
+      <div style="padding: 40px 0 40px 40px;">
+        <p style="font-size: 48px; font-weight: 700; color: #FAFAF8; letter-spacing: -0.03em; line-height: 1;">500+</p>
+        <p style="font-size: 13px; color: #FF7138; margin-top: 4px; font-weight: 500;">unique homes</p>
+        <p style="font-size: 12px; color: rgba(250,250,248,0.35); margin-top: 12px; line-height: 1.6;">Diverse residential environments — Q3 target: 10,000 hours delivered</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE CAPTURE — real images -->
+<section id="data" style="padding: 96px 56px; background: #FAFAF8; border-bottom: 1px solid rgba(0,0,0,0.07);">
+  <div style="max-width: 1200px;">
+    <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 56px;">
+      <div>
+        <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(17,16,16,0.35); margin-bottom: 14px; font-weight: 500;">What we capture</p>
+        <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #111010;">Three domains. Continuous footage.</h2>
+      </div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+      <div style="background: #111010; border-radius: 8px; overflow: hidden;">
+        <div style="position: relative; height: 260px; overflow: hidden;">
+          <img src="assets/images/hand-object-interaction.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Hand-object interaction">
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,10,9,0.7) 0%, transparent 60%);"></div>
+          <span style="position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-family: monospace;">01</span>
+        </div>
+        <div style="padding: 28px 28px 32px;">
+          <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 10px; color: #FAFAF8; line-height: 1.3;">Hand-Object Interactions</h3>
+          <p style="font-size: 13px; line-height: 1.75; color: rgba(250,250,248,0.45);">Grasping, lifting, wiping, scrubbing, pouring. Dense manipulation sequences with bottles, cloths, tools, and containers.</p>
+        </div>
+      </div>
+      <div style="background: #111010; border-radius: 8px; overflow: hidden;">
+        <div style="position: relative; height: 260px; overflow: hidden;">
+          <img src="assets/images/cleaning-task.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Cleaning task with annotations">
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,10,9,0.7) 0%, transparent 60%);"></div>
+          <span style="position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-family: monospace;">02</span>
+        </div>
+        <div style="padding: 28px 28px 32px;">
+          <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 10px; color: #FAFAF8; line-height: 1.3;">Household Cleaning Tasks</h3>
+          <p style="font-size: 13px; line-height: 1.75; color: rgba(250,250,248,0.45);">Surface wiping, vacuuming, appliance interaction. Long-horizon task sequences with labeled action primitives and task progress.</p>
+        </div>
+      </div>
+      <div style="background: #111010; border-radius: 8px; overflow: hidden;">
+        <div style="position: relative; height: 260px; overflow: hidden;">
+          <img src="assets/images/room-navigation.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Room navigation">
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,10,9,0.7) 0%, transparent 60%);"></div>
+          <span style="position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-family: monospace;">03</span>
+        </div>
+        <div style="padding: 28px 28px 32px;">
+          <h3 style="font-size: 16px; font-weight: 700; margin-bottom: 10px; color: #FAFAF8; line-height: 1.3;">Room Navigation</h3>
+          <p style="font-size: 13px; line-height: 1.75; color: rgba(250,250,248,0.45);">Kitchen, bathroom, and living area traversal. Egocentric viewpoints through doorways and around furniture across diverse real homes.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PIPELINE — consolidated, single section -->
+<section id="pipeline" style="padding: 96px 56px; background: #F3F2EF; border-bottom: 1px solid rgba(0,0,0,0.07);">
+  <div style="max-width: 1200px;">
+    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start;">
+      <div>
+        <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(17,16,16,0.35); margin-bottom: 16px; font-weight: 500;">End-to-end</p>
+        <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #111010; margin-bottom: 24px;">We own the whole pipeline.</h2>
+        <p style="font-size: 14px; line-height: 1.75; color: rgba(17,16,16,0.52);">From crew deployment to clean, release-backed data in your hands. Nothing is your operational problem.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(0,0,0,0.07); border-radius: 8px; overflow: hidden;">
+        <div style="background: #FAFAF8; padding: 36px 32px;">
+          <p style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #FF7138; margin-bottom: 14px; font-weight: 600;">01 — Crew</p>
+          <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 10px; color: #111010; line-height: 1.3;">Professional residential cleaners</h3>
+          <p style="font-size: 13px; line-height: 1.7; color: rgba(17,16,16,0.52);">Third-party crews performing their actual jobs. Hardware distribution and on-site scheduling managed entirely by Nero.</p>
+        </div>
+        <div style="background: #FAFAF8; padding: 36px 32px;">
+          <p style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #FF7138; margin-bottom: 14px; font-weight: 600;">02 — Capture</p>
+          <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 10px; color: #111010; line-height: 1.3;">Unconstrained egocentric rigs</h3>
+          <p style="font-size: 13px; line-height: 1.7; color: rgba(17,16,16,0.52);">Head-mounted rigs worn throughout the full shift. Continuous 4K/60fps with co-located IMU and depth — no operator, no manual control.</p>
+        </div>
+        <div style="background: #FAFAF8; padding: 36px 32px;">
+          <p style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #FF7138; margin-bottom: 14px; font-weight: 600;">03 — Sanitization</p>
+          <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 10px; color: #111010; line-height: 1.3;">PII removal + privacy releases</h3>
+          <p style="font-size: 13px; line-height: 1.7; color: rgba(17,16,16,0.52);">Automated face, text, and screen blurring on every frame. Biometric and property releases obtained and archived per session.</p>
+        </div>
+        <div style="background: #FAFAF8; padding: 36px 32px;">
+          <p style="font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #FF7138; margin-bottom: 14px; font-weight: 600;">04 — Delivery</p>
+          <h3 style="font-size: 15px; font-weight: 700; margin-bottom: 10px; color: #111010; line-height: 1.3;">SLA-backed hourly quotas</h3>
+          <p style="font-size: 13px; line-height: 1.7; color: rgba(17,16,16,0.52);">Processed data against agreed quotas via secure transfer. Pilot contracts and MSAs supported with throughput commitments.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPLIANCE -->
+<section id="compliance" style="padding: 96px 56px; background: #FAFAF8; border-bottom: 1px solid rgba(0,0,0,0.07);">
+  <div style="max-width: 1200px;">
+    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start;">
+      <div>
+        <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(17,16,16,0.35); margin-bottom: 16px; font-weight: 500;">Privacy &amp; compliance</p>
+        <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #111010; margin-bottom: 20px;">Built for enterprise governance.</h2>
+        <p style="font-size: 14px; line-height: 1.75; color: rgba(17,16,16,0.52);">Privacy is load-bearing infrastructure here, not an afterthought. Every session arrives with a complete chain of consent and documentation.</p>
+      </div>
+      <div>
+        <div style="display: flex; gap: 20px; align-items: flex-start; padding: 28px 0; border-bottom: 1px solid rgba(0,0,0,0.07);">
+          <span style="flex-shrink: 0; width: 28px; height: 28px; background: rgba(255,113,56,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #FF7138;">01</span>
+          <div>
+            <p style="font-size: 14px; font-weight: 700; margin-bottom: 6px; color: #111010;">Biometric releases</p>
+            <p style="font-size: 13px; line-height: 1.7; color: rgba(17,16,16,0.52);">Written consent from all crew members covering gait, hand geometry, and facial incidentals. Archives available under MSA terms.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start; padding: 28px 0; border-bottom: 1px solid rgba(0,0,0,0.07);">
+          <span style="flex-shrink: 0; width: 28px; height: 28px; background: rgba(255,113,56,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #FF7138;">02</span>
+          <div>
+            <p style="font-size: 14px; font-weight: 700; margin-bottom: 6px; color: #111010;">Property access releases</p>
+            <p style="font-size: 13px; line-height: 1.7; color: rgba(17,16,16,0.52);">Homeowners sign filming releases before any session. Documentation provided and auditable per deployment.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start; padding: 28px 0; border-bottom: 1px solid rgba(0,0,0,0.07);">
+          <span style="flex-shrink: 0; width: 28px; height: 28px; background: rgba(255,113,56,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #FF7138;">03</span>
+          <div>
+            <p style="font-size: 14px; font-weight: 700; margin-bottom: 6px; color: #111010;">Automated PII blurring</p>
+            <p style="font-size: 13px; line-height: 1.7; color: rgba(17,16,16,0.52);">Every frame processed for faces, screens, text, and identifiable documents. Redaction logs delivered with each dataset.</p>
+          </div>
+        </div>
+        <div style="display: flex; gap: 20px; align-items: flex-start; padding: 28px 0;">
+          <span style="flex-shrink: 0; width: 28px; height: 28px; background: rgba(255,113,56,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 700; color: #FF7138;">04</span>
+          <div>
+            <p style="font-size: 14px; font-weight: 700; margin-bottom: 6px; color: #111010;" data-comment-anchor="17657255dc-p">Data licensing <span style="font-size: 11px; font-weight: 500; color: rgba(17,16,16,0.38); letter-spacing: 0.02em;">— exclusive or shared</span></p>
+            <p style="font-size: 13px; line-height: 1.7; color: rgba(17,16,16,0.52);">Exclusive licensing available — we do not resell, repurpose, or retain copies. Shared licensing arrangements also available on request.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding: 96px 56px; background: #0F0E0D;">
+  <div style="max-width: 1200px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+    <div>
+      <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 16px; font-weight: 500;">Start the conversation</p>
+      <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #FAFAF8; margin-bottom: 20px;">Let's discuss a pilot.</h2>
+      <p style="font-size: 15px; line-height: 1.75; color: rgba(250,250,248,0.45); max-width: 400px; margin-bottom: 48px;">We're aligning Q3 capture protocols and actively onboarding enterprise buyers. Ready to scope hourly quotas, data formats, and contract structure.</p>
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div>
+          <p style="font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(250,250,248,0.25); margin-bottom: 6px; font-weight: 500;" data-comment-anchor="4173f3986e-p">Enquiries</p>
+          <p style="font-size: 13px; color: rgba(250,250,248,0.65);">inquiries@nerodevelopment.com</p>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+          <div>
+            <label style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Name</label>
+            <input type="text" placeholder="Your name" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none;">
+          </div>
+          <div>
+            <label style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Company</label>
+            <input type="text" placeholder="Your company" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none;">
+          </div>
+        </div>
+        <div>
+          <label style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Email</label>
+          <input type="email" placeholder="you@company.com" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none;">
+        </div>
+        <div>
+          <label style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">What you're looking for</label>
+          <textarea rows="4" placeholder="Data volumes, formats, timeline, contract structure…" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none; resize: none; line-height: 1.6;"></textarea>
+        </div>
+        <button type="button" style="align-self: flex-start; background: #FF7138; color: #fff; font-size: 14px; font-weight: 600; padding: 14px 32px; border-radius: 4px; border: none; cursor: pointer; font-family: inherit; letter-spacing: 0.01em;">Send enquiry</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #0B0A09; border-top: 1px solid rgba(255,255,255,0.04); padding: 36px 56px; display: flex; align-items: center; justify-content: space-between;">
+  <div style="display: flex; align-items: center; gap: 8px;">
+    <svg width="16" height="16" viewBox="0 0 20 20" fill="none">
+      <circle cx="10" cy="10" r="8.5" stroke="rgba(255,113,56,0.6)" stroke-width="1.5"></circle>
+      <circle cx="10" cy="10" r="3" fill="rgba(255,113,56,0.6)"></circle>
+    </svg>
+    <span style="font-size: 12px; font-weight: 700; color: rgba(250,250,248,0.35);">Nero Development</span>
+  </div>
+  <p style="font-size: 11px; color: rgba(250,250,248,0.2);">Real-world egocentric data for humanoid intelligence.</p>
+  <div style="display: flex; gap: 28px;">
+    <a href="#data" style="font-size: 11px; color: rgba(250,250,248,0.3);">The Data</a>
+    <a href="#pipeline" style="font-size: 11px; color: rgba(250,250,248,0.3);">Pipeline</a>
+    <a href="#compliance" style="font-size: 11px; color: rgba(250,250,248,0.3);">Compliance</a>
+    <a href="#contact" style="font-size: 11px; color: rgba(250,250,248,0.3);">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
