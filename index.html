@@ -3,11 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nero Development</title>
+  <title>Nero Development — Egocentric Training Data for Humanoid Robots</title>
+  <meta name="description" content="Professional egocentric video data for humanoid robotics. Multi-hour, unconstrained footage from cleaning crews — dense hand-object interaction, IMU, depth, and full privacy compliance.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nerodevelopment.com/">
+  <meta property="og:title" content="Nero Development — Egocentric Training Data for Humanoid Robots">
+  <meta property="og:description" content="Professional egocentric video data for humanoid robotics. Dense hand-object interaction at scale, with biometric and property releases included.">
+  <meta property="og:image" content="https://nerodevelopment.com/assets/images/hand-object-interaction.webp">
+  <meta property="og:image:width" content="1672">
+  <meta property="og:image:height" content="941">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nero Development — Egocentric Training Data for Humanoid Robots">
+  <meta name="twitter:description" content="Professional egocentric video data for humanoid robotics. Dense hand-object interaction at scale, with biometric and property releases included.">
+  <meta name="twitter:image" content="https://nerodevelopment.com/assets/images/hand-object-interaction.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='8.5' stroke='%23FF7138' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='10' cy='10' r='3' fill='%23FF7138'/%3E%3C/svg%3E">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
 </head>
 <body>
 
@@ -20,7 +42,7 @@
     </svg>
     <span style="font-size: 13px; font-weight: 700; letter-spacing: -0.01em; color: #FAFAF8;">Nero Development</span>
   </div>
-  <div style="display: flex; align-items: center; gap: 36px;">
+  <div class="nav-links">
     <a href="#data" style="font-size: 12px; color: rgba(250,250,248,0.45);">The Data</a>
     <a href="#pipeline" style="font-size: 12px; color: rgba(250,250,248,0.45);">Pipeline</a>
     <a href="#compliance" style="font-size: 12px; color: rgba(250,250,248,0.45);">Compliance</a>
@@ -29,8 +51,11 @@
 </nav>
 
 <!-- HERO -->
-<section style="position: relative; min-height: 100vh; background: #0B0A09; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; align-items: center; padding: 160px 56px 72px;">
-  <img src="assets/images/hero-bg.jpg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.65;" alt="">
+<section class="hero-section" style="position: relative; min-height: 100vh; background: #0B0A09; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
+  <picture>
+    <source srcset="assets/images/hero-bg.webp" type="image/webp">
+    <img src="assets/images/hero-bg.jpg" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; opacity: 0.65;" alt="" fetchpriority="high">
+  </picture>
   <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(11,10,9,0.82) 0%, rgba(11,10,9,0.45) 50%, rgba(11,10,9,0.72) 100%);"></div>
 
   <!-- HUD overlay top-left -->
@@ -60,8 +85,8 @@
 </section>
 
 <!-- THE INSIGHT — why cleaning crews -->
-<section style="background: #FAFAF8; padding: 96px 56px; border-bottom: 1px solid rgba(0,0,0,0.07);">
-  <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start; max-width: 1200px;">
+<section class="section-pad" style="background: #FAFAF8; border-bottom: 1px solid rgba(0,0,0,0.07);">
+  <div class="section-inner two-col">
     <div>
       <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(17,16,16,0.35); margin-bottom: 16px; font-weight: 500;">Why this works</p>
       <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #111010;">Cleaning crews are the world's best robot teachers.</h2>
@@ -87,10 +112,10 @@
 </section>
 
 <!-- SPECS — dark section -->
-<section style="background: #0F0E0D; padding: 80px 56px; border-bottom: 1px solid rgba(255,255,255,0.04);">
-  <div style="max-width: 1200px;">
+<section class="section-pad--sm" style="background: #0F0E0D; border-bottom: 1px solid rgba(255,255,255,0.04);">
+  <div class="section-inner">
     <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 56px; font-weight: 500;">Capture specifications</p>
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid rgba(255,255,255,0.07);">
+    <div class="specs-grid">
       <div style="padding: 40px 40px 40px 0; border-right: 1px solid rgba(255,255,255,0.07);">
         <p style="font-size: 48px; font-weight: 700; color: #FAFAF8; letter-spacing: -0.03em; line-height: 1;">4K</p>
         <p style="font-size: 13px; color: #FF7138; margin-top: 4px; font-weight: 500;">60 fps</p>
@@ -116,18 +141,21 @@
 </section>
 
 <!-- WHAT WE CAPTURE — real images -->
-<section id="data" style="padding: 96px 56px; background: #FAFAF8; border-bottom: 1px solid rgba(0,0,0,0.07);">
-  <div style="max-width: 1200px;">
+<section id="data" class="section-pad" style="background: #FAFAF8; border-bottom: 1px solid rgba(0,0,0,0.07);">
+  <div class="section-inner">
     <div style="display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 56px;">
       <div>
         <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(17,16,16,0.35); margin-bottom: 14px; font-weight: 500;">What we capture</p>
         <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #111010;">Three domains. Continuous footage.</h2>
       </div>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+    <div class="capture-grid">
       <div style="background: #111010; border-radius: 8px; overflow: hidden;">
         <div style="position: relative; height: 260px; overflow: hidden;">
-          <img src="assets/images/hand-object-interaction.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Hand-object interaction">
+          <picture style="display: block; width: 100%; height: 100%;">
+            <source srcset="assets/images/hand-object-interaction.webp" type="image/webp">
+            <img src="assets/images/hand-object-interaction.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Hand-object interaction">
+          </picture>
           <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,10,9,0.7) 0%, transparent 60%);"></div>
           <span style="position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-family: monospace;">01</span>
         </div>
@@ -138,7 +166,10 @@
       </div>
       <div style="background: #111010; border-radius: 8px; overflow: hidden;">
         <div style="position: relative; height: 260px; overflow: hidden;">
-          <img src="assets/images/cleaning-task.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Cleaning task with annotations">
+          <picture style="display: block; width: 100%; height: 100%;">
+            <source srcset="assets/images/cleaning-task.webp" type="image/webp">
+            <img src="assets/images/cleaning-task.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Cleaning task with annotations">
+          </picture>
           <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,10,9,0.7) 0%, transparent 60%);"></div>
           <span style="position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-family: monospace;">02</span>
         </div>
@@ -149,7 +180,10 @@
       </div>
       <div style="background: #111010; border-radius: 8px; overflow: hidden;">
         <div style="position: relative; height: 260px; overflow: hidden;">
-          <img src="assets/images/room-navigation.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Room navigation">
+          <picture style="display: block; width: 100%; height: 100%;">
+            <source srcset="assets/images/room-navigation.webp" type="image/webp">
+            <img src="assets/images/room-navigation.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Room navigation">
+          </picture>
           <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,10,9,0.7) 0%, transparent 60%);"></div>
           <span style="position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-family: monospace;">03</span>
         </div>
@@ -163,9 +197,9 @@
 </section>
 
 <!-- PIPELINE — consolidated, single section -->
-<section id="pipeline" style="padding: 96px 56px; background: #F3F2EF; border-bottom: 1px solid rgba(0,0,0,0.07);">
-  <div style="max-width: 1200px;">
-    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start;">
+<section id="pipeline" class="section-pad" style="background: #F3F2EF; border-bottom: 1px solid rgba(0,0,0,0.07);">
+  <div class="section-inner">
+    <div class="two-col">
       <div>
         <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(17,16,16,0.35); margin-bottom: 16px; font-weight: 500;">End-to-end</p>
         <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #111010; margin-bottom: 24px;">We own the whole pipeline.</h2>
@@ -198,9 +232,9 @@
 </section>
 
 <!-- COMPLIANCE -->
-<section id="compliance" style="padding: 96px 56px; background: #FAFAF8; border-bottom: 1px solid rgba(0,0,0,0.07);">
-  <div style="max-width: 1200px;">
-    <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 80px; align-items: start;">
+<section id="compliance" class="section-pad" style="background: #FAFAF8; border-bottom: 1px solid rgba(0,0,0,0.07);">
+  <div class="section-inner">
+    <div class="two-col">
       <div>
         <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(17,16,16,0.35); margin-bottom: 16px; font-weight: 500;">Privacy &amp; compliance</p>
         <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #111010; margin-bottom: 20px;">Built for enterprise governance.</h2>
@@ -241,8 +275,8 @@
 </section>
 
 <!-- CONTACT -->
-<section id="contact" style="padding: 96px 56px; background: #0F0E0D;">
-  <div style="max-width: 1200px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start;">
+<section id="contact" class="section-pad" style="background: #0F0E0D;">
+  <div class="section-inner contact-grid">
     <div>
       <p style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 16px; font-weight: 500;">Start the conversation</p>
       <h2 style="font-size: clamp(28px, 3vw, 44px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.08; color: #FAFAF8; margin-bottom: 20px;">Let's discuss a pilot.</h2>
@@ -255,27 +289,27 @@
       </div>
     </div>
     <div>
-      <div style="display: flex; flex-direction: column; gap: 16px;">
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <form method="POST" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="field-row">
           <div>
-            <label style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Name</label>
-            <input type="text" placeholder="Your name" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none;">
+            <label for="name" style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name" required style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none;">
           </div>
           <div>
-            <label style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Company</label>
-            <input type="text" placeholder="Your company" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none;">
+            <label for="company" style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Company</label>
+            <input id="company" type="text" name="company" placeholder="Your company" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none;">
           </div>
         </div>
         <div>
-          <label style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Email</label>
-          <input type="email" placeholder="you@company.com" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none;">
+          <label for="email" style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Email</label>
+          <input id="email" type="email" name="email" placeholder="you@company.com" required style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none;">
         </div>
         <div>
-          <label style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">What you're looking for</label>
-          <textarea rows="4" placeholder="Data volumes, formats, timeline, contract structure…" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none; resize: none; line-height: 1.6;"></textarea>
+          <label for="message" style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">What you're looking for</label>
+          <textarea id="message" name="message" rows="4" placeholder="Data volumes, formats, timeline, contract structure…" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none; resize: none; line-height: 1.6;"></textarea>
         </div>
-        <button type="button" style="align-self: flex-start; background: #FF7138; color: #fff; font-size: 14px; font-weight: 600; padding: 14px 32px; border-radius: 4px; border: none; cursor: pointer; font-family: inherit; letter-spacing: 0.01em;">Send enquiry</button>
-      </div>
+        <button type="submit" style="align-self: flex-start; background: #FF7138; color: #fff; font-size: 14px; font-weight: 600; padding: 14px 32px; border-radius: 4px; border: none; cursor: pointer; font-family: inherit; letter-spacing: 0.01em;">Send enquiry</button>
+      </form>
     </div>
   </div>
 </section>
