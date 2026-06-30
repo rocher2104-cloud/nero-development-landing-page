@@ -5,21 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nero Development — Egocentric Training Data for Humanoid Robots</title>
   <meta name="description" content="Professional egocentric video data for humanoid robotics. Multi-hour, unconstrained footage from cleaning crews — dense hand-object interaction, IMU, depth, and full privacy compliance.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0B0A09">
+  <link rel="canonical" href="https://nerodevelopment.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nero Development">
+  <meta property="og:locale" content="en_US">
   <meta property="og:url" content="https://nerodevelopment.com/">
   <meta property="og:title" content="Nero Development — Egocentric Training Data for Humanoid Robots">
   <meta property="og:description" content="Professional egocentric video data for humanoid robotics. Dense hand-object interaction at scale, with biometric and property releases included.">
   <meta property="og:image" content="https://nerodevelopment.com/assets/images/hand-object-interaction.webp">
   <meta property="og:image:width" content="1672">
   <meta property="og:image:height" content="941">
+  <meta property="og:image:alt" content="Egocentric hand-object interaction footage captured for humanoid robot training.">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nero Development — Egocentric Training Data for Humanoid Robots">
   <meta name="twitter:description" content="Professional egocentric video data for humanoid robotics. Dense hand-object interaction at scale, with biometric and property releases included.">
   <meta name="twitter:image" content="https://nerodevelopment.com/assets/images/hand-object-interaction.webp">
+  <meta name="twitter:image:alt" content="Egocentric hand-object interaction footage captured for humanoid robot training.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='8.5' stroke='%23FF7138' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='10' cy='10' r='3' fill='%23FF7138'/%3E%3C/svg%3E">
@@ -30,6 +37,64 @@
   <link rel="stylesheet" href="styles/fonts.css">
   <link rel="stylesheet" href="styles/main.css">
   <link rel="stylesheet" href="styles/responsive.css">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://nerodevelopment.com/#organization",
+        "name": "Nero Development",
+        "url": "https://nerodevelopment.com/",
+        "logo": "https://nerodevelopment.com/assets/images/hand-object-interaction.webp",
+        "description": "Professional egocentric video data for humanoid robotics. Multi-hour, unconstrained footage from cleaning crews — dense hand-object interaction, IMU, depth, and full privacy compliance.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "inquiries@nerodevelopment.com",
+          "contactType": "sales"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nerodevelopment.com/#website",
+        "url": "https://nerodevelopment.com/",
+        "name": "Nero Development",
+        "description": "Egocentric training data for humanoid robots.",
+        "publisher": { "@id": "https://nerodevelopment.com/#organization" }
+      },
+      {
+        "@type": "Dataset",
+        "@id": "https://nerodevelopment.com/#dataset",
+        "name": "Nero Egocentric Robotics Training Data",
+        "description": "Multi-hour, unconstrained egocentric (first-person) video of professional cleaning crews working in real homes. Dense hand-object interaction, household cleaning tasks, and room navigation, captured at 4K/60fps with synchronized IMU and structured-light depth, and delivered with biometric and property releases plus per-frame PII redaction.",
+        "url": "https://nerodevelopment.com/",
+        "keywords": [
+          "egocentric video",
+          "humanoid robotics",
+          "embodied AI",
+          "hand-object interaction",
+          "manipulation data",
+          "dexterity data",
+          "imitation learning",
+          "robot training data"
+        ],
+        "creator": { "@id": "https://nerodevelopment.com/#organization" },
+        "measurementTechnique": "Head-mounted egocentric camera rigs with synchronized IMU and structured-light depth",
+        "variableMeasured": ["RGB video (4K/60fps)", "6-DoF IMU", "Structured-light depth (0.5–5.0 m)"],
+        "isAccessibleForFree": false,
+        "license": "https://nerodevelopment.com/",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/PreOrder",
+          "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+          "seller": { "@id": "https://nerodevelopment.com/#organization" }
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -49,6 +114,8 @@
     <a href="#contact" style="display: inline-flex; align-items: center; gap: 6px; background: #FF7138; color: #fff; font-size: 12px; font-weight: 600; padding: 8px 16px; border-radius: 4px; letter-spacing: 0.01em;">Discuss a pilot</a>
   </div>
 </nav>
+
+<main>
 
 <!-- HERO -->
 <section class="hero-section" style="position: relative; min-height: 100vh; background: #0B0A09; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; align-items: center;">
@@ -154,7 +221,7 @@
         <div style="position: relative; height: 260px; overflow: hidden;">
           <picture style="display: block; width: 100%; height: 100%;">
             <source srcset="assets/images/hand-object-interaction.webp" type="image/webp">
-            <img src="assets/images/hand-object-interaction.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Hand-object interaction">
+            <img src="assets/images/hand-object-interaction.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Egocentric view of dense hand-object interaction — grasping and wiping during a cleaning task" loading="lazy" width="800" height="520">
           </picture>
           <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,10,9,0.7) 0%, transparent 60%);"></div>
           <span style="position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-family: monospace;">01</span>
@@ -168,7 +235,7 @@
         <div style="position: relative; height: 260px; overflow: hidden;">
           <picture style="display: block; width: 100%; height: 100%;">
             <source srcset="assets/images/cleaning-task.webp" type="image/webp">
-            <img src="assets/images/cleaning-task.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Cleaning task with annotations">
+            <img src="assets/images/cleaning-task.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Egocentric footage of a household cleaning task with labeled action primitives" loading="lazy" width="800" height="520">
           </picture>
           <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,10,9,0.7) 0%, transparent 60%);"></div>
           <span style="position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-family: monospace;">02</span>
@@ -182,7 +249,7 @@
         <div style="position: relative; height: 260px; overflow: hidden;">
           <picture style="display: block; width: 100%; height: 100%;">
             <source srcset="assets/images/room-navigation.webp" type="image/webp">
-            <img src="assets/images/room-navigation.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Room navigation">
+            <img src="assets/images/room-navigation.png" style="width: 100%; height: 100%; object-fit: cover; object-position: center top;" alt="Egocentric room navigation through a real home — kitchen, bathroom, and living area traversal" loading="lazy" width="800" height="520">
           </picture>
           <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(11,10,9,0.7) 0%, transparent 60%);"></div>
           <span style="position: absolute; bottom: 16px; left: 20px; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.5); font-family: monospace;">03</span>
@@ -289,7 +356,7 @@
       </div>
     </div>
     <div>
-      <form method="POST" action="https://formspree.io/f/REPLACE_WITH_FORM_ID" style="display: flex; flex-direction: column; gap: 16px;">
+      <form id="contact-form" method="POST" action="mailto:inquiries@nerodevelopment.com" enctype="text/plain" style="display: flex; flex-direction: column; gap: 16px;">
         <div class="field-row">
           <div>
             <label for="name" style="display: block; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(250,250,248,0.3); margin-bottom: 8px; font-weight: 500;">Name</label>
@@ -309,10 +376,47 @@
           <textarea id="message" name="message" rows="4" placeholder="Data volumes, formats, timeline, contract structure…" style="width: 100%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 12px 14px; font-size: 14px; color: #FAFAF8; font-family: inherit; outline: none; resize: none; line-height: 1.6;"></textarea>
         </div>
         <button type="submit" style="align-self: flex-start; background: #FF7138; color: #fff; font-size: 14px; font-weight: 600; padding: 14px 32px; border-radius: 4px; border: none; cursor: pointer; font-family: inherit; letter-spacing: 0.01em;">Send enquiry</button>
+        <p id="form-status" role="status" aria-live="polite" style="display: none; font-size: 13px; line-height: 1.6; margin: 4px 0 0;"></p>
       </form>
     </div>
   </div>
 </section>
+
+</main>
+
+<script>
+  // ── Contact form (mailto) ──────────────────────────────────────
+  // Submissions open the visitor's email client pre-filled to the
+  // address below. No backend or account required.
+  var CONTACT_EMAIL = "inquiries@nerodevelopment.com";
+
+  (function () {
+    var form = document.getElementById("contact-form");
+    var status = document.getElementById("form-status");
+    if (!form || !status) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var data = new FormData(form);
+      var subject = "Pilot enquiry — " + (data.get("company") || data.get("name") || "Nero Development");
+      var body =
+        "Name: " + (data.get("name") || "") +
+        "\nCompany: " + (data.get("company") || "") +
+        "\nEmail: " + (data.get("email") || "") +
+        "\n\n" + (data.get("message") || "");
+
+      window.location.href = "mailto:" + CONTACT_EMAIL +
+        "?subject=" + encodeURIComponent(subject) +
+        "&body=" + encodeURIComponent(body);
+
+      status.innerHTML = "Opening your email app… if nothing happens, write to " +
+        "<a href=\"mailto:" + CONTACT_EMAIL + "\" style=\"color:inherit;text-decoration:underline;\">" + CONTACT_EMAIL + "</a>.";
+      status.style.color = "#7BC47F";
+      status.style.display = "block";
+    });
+  })();
+</script>
 
 <!-- FOOTER -->
 <footer style="background: #0B0A09; border-top: 1px solid rgba(255,255,255,0.04); padding: 36px 56px; display: flex; align-items: center; justify-content: space-between;">
