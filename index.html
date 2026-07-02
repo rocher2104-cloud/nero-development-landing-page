@@ -21,7 +21,7 @@
   <header class="site-header">
     <div class="container site-header__inner">
       <a class="brand" href="#top" aria-label="Nero Development home">
-        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__mark" aria-hidden="true"></span>
         <span class="brand__name">Nero Development</span>
       </a>
       <a class="btn btn--ghost" href="#contact">Get in touch</a>
@@ -32,6 +32,17 @@
 
     <!-- ============ 01 · Hero ============ -->
     <section class="hero" aria-label="Introduction">
+      <svg class="hero__logo" viewBox="0 0 420 422" aria-hidden="true">
+        <g fill="currentColor" fill-rule="nonzero">
+          <path d="M 265.0 120.0 L 263.0 44.0 L 257.0 28.0 L 247.0 21.0 L 233.0 21.0 L 191.0 32.0 L 77.0 58.0 L 72.0 61.0 L 68.0 69.0 L 69.0 78.0 L 73.0 83.0 L 144.0 133.0 L 161.0 143.0 L 167.0 143.0 L 218.0 130.0 Z"/>
+          <path d="M 279.0 39.0 L 278.0 73.0 L 280.0 116.0 L 329.0 104.0 L 334.0 104.0 L 341.0 101.0 L 351.0 100.0 L 354.0 98.0 L 376.0 94.0 L 379.0 92.0 L 379.0 89.0 L 301.0 34.0 L 297.0 32.0 L 288.0 32.0 L 282.0 35.0 Z"/>
+          <path d="M 38.0 95.0 L 32.0 101.0 L 30.0 106.0 L 34.0 283.0 L 37.0 294.0 L 46.0 301.0 L 58.0 304.0 L 65.0 304.0 L 144.0 286.0 L 144.0 215.0 L 141.0 156.0 L 129.0 144.0 L 58.0 95.0 L 50.0 92.0 Z"/>
+          <path d="M 281.0 134.0 L 280.0 143.0 L 282.0 179.0 L 284.0 273.0 L 286.0 277.0 L 291.0 282.0 L 371.0 338.0 L 381.0 342.0 L 389.0 340.0 L 393.0 337.0 L 396.0 331.0 L 391.0 132.0 L 388.0 125.0 L 385.0 121.0 L 376.0 116.0 L 360.0 115.0 Z"/>
+          <path d="M 265.0 138.0 L 186.0 156.0 L 176.0 160.0 L 165.0 170.0 L 159.0 181.0 L 157.0 191.0 L 159.0 282.0 L 238.0 264.0 L 249.0 259.0 L 261.0 247.0 L 265.0 240.0 L 268.0 229.0 L 267.0 162.0 Z"/>
+          <path d="M 344.0 343.0 L 339.0 335.0 L 263.0 282.0 L 257.0 280.0 L 251.0 280.0 L 234.0 285.0 L 212.0 289.0 L 204.0 292.0 L 162.0 301.0 L 160.0 303.0 L 162.0 380.0 L 168.0 395.0 L 176.0 401.0 L 190.0 401.0 L 236.0 389.0 L 245.0 388.0 L 333.0 367.0 L 338.0 364.0 L 343.0 357.0 Z"/>
+          <path d="M 147.0 383.0 L 148.0 367.0 L 145.0 305.0 L 94.0 318.0 L 89.0 318.0 L 85.0 320.0 L 51.0 327.0 L 45.0 330.0 L 41.0 335.0 L 44.0 340.0 L 124.0 395.0 L 134.0 395.0 L 139.0 393.0 L 144.0 389.0 Z"/>
+        </g>
+      </svg>
       <div class="container">
         <h1 class="hero__headline">Egocentric data,<br>captured where the<br>work happens.</h1>
         <p class="hero__sub">Recording infrastructure for cleaning crews, restaurants, and university labs — built to supply robotics teams with real, continuous, first-person data.</p>
@@ -83,22 +94,21 @@
         <h2 class="section-title stack-title" id="where-title">Three verticals, one capture standard</h2>
         <div class="grid grid--3">
           <article class="card">
-            <div class="placeholder placeholder--md"><span class="placeholder__label">STOCK PLACEHOLDER<br>cleaning crew, generic</span></div>
+            <div class="card__media"><img src="assets/photos/cleaning.png" alt="Cleaning crew worker performing surface prep and tool handling" loading="lazy"></div>
             <h3 class="card__title">Cleaning</h3>
             <p class="card__text">Surface prep, tool handling, spill response, and room-to-room navigation across varied sites.</p>
           </article>
           <article class="card">
-            <div class="placeholder placeholder--md"><span class="placeholder__label">STOCK PLACEHOLDER<br>kitchen line, generic</span></div>
+            <div class="card__media"><img src="assets/photos/restaurants.png" alt="Restaurant kitchen line during food prep and service" loading="lazy"></div>
             <h3 class="card__title">Restaurants</h3>
             <p class="card__text">Food prep, plating, and service work carried out under time pressure and constant change.</p>
           </article>
           <article class="card">
-            <div class="placeholder placeholder--md"><span class="placeholder__label">STOCK PLACEHOLDER<br>lab bench, generic</span></div>
+            <div class="card__media"><img src="assets/photos/university-labs.png" alt="University lab bench during precision manipulation work" loading="lazy"></div>
             <h3 class="card__title">University Labs</h3>
             <p class="card__text">Precision manipulation, instrument handling, and structured, repeatable protocols.</p>
           </article>
         </div>
-        <p class="stock-note">Imagery shown is generic stock — site-specific stills to follow.</p>
       </div>
     </section>
 
@@ -144,9 +154,17 @@
         <p class="eyebrow">05 — The Hardware</p>
         <h2 class="section-title" id="gear-title">Recording gear</h2>
         <p class="center__sub">Designed and manufactured in-house.</p>
-        <div class="gear-grid">
-          <div class="placeholder"><span class="placeholder__label">RENDER PLACEHOLDER —<br>capture unit, front view</span></div>
-          <div class="placeholder"><span class="placeholder__label">RENDER PLACEHOLDER —<br>capture unit, worn in use</span></div>
+        <div class="gear-showcase">
+          <div class="gear-showcase__caption gear-showcase__caption--1">
+            <h3 class="gear-showcase__caption-title">Cap-mounted unit</h3>
+            <p class="gear-showcase__caption-text">Low-profile and lightweight — built to disappear into a normal shift, not distract from it.</p>
+          </div>
+          <div class="gear-showcase__media gear-showcase__media--1"><img src="assets/photos/hardware1.png" alt="Nero capture unit, front view" loading="lazy"></div>
+          <div class="gear-showcase__media gear-showcase__media--2"><img src="assets/photos/hardware2.png" alt="Nero capture unit, worn in use" loading="lazy"></div>
+          <div class="gear-showcase__caption gear-showcase__caption--2">
+            <h3 class="gear-showcase__caption-title">Head-strap unit</h3>
+            <p class="gear-showcase__caption-text">A secure, hands-free fit for high-mobility tasks and extended, continuous-capture shifts.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -158,11 +176,11 @@
         <h2 class="section-title stack-title" id="specs-title">Camera specifications</h2>
         <div class="grid grid--4">
           <div class="spec">
-            <div class="spec__value">4K</div>
+            <div class="spec__value">1080p</div>
             <div class="spec__label">Resolution</div>
           </div>
           <div class="spec">
-            <div class="spec__value">60<span class="spec__unit">FPS</span></div>
+            <div class="spec__value">30<span class="spec__unit">FPS</span></div>
             <div class="spec__label">Frame rate, up to</div>
           </div>
           <div class="spec">
@@ -269,7 +287,7 @@
     <section class="section section--soft" id="contact" aria-labelledby="cta-title">
       <div class="container">
         <div class="brand">
-          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__name">Nero Development</span>
         </div>
         <h2 class="cta__headline" id="cta-title">Let's build your dataset.</h2>
@@ -286,7 +304,7 @@
   <footer class="site-footer">
     <div class="container site-footer__inner">
       <div class="brand">
-        <span class="brand__dot" aria-hidden="true"></span>
+        <span class="brand__mark" aria-hidden="true"></span>
         <span class="brand__name">Nero Development</span>
       </div>
       <a href="mailto:inquiries@nerodevelopment.com">inquiries@nerodevelopment.com</a>

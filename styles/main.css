@@ -49,6 +49,7 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  overflow-x: hidden;
 }
 
 img { max-width: 100%; display: block; }
@@ -94,7 +95,14 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- Brand mark ---------- */
 .brand { display: inline-flex; align-items: center; gap: 0.7rem; }
-.brand__dot { width: 14px; height: 14px; border-radius: 50%; background: var(--accent); flex: none; }
+.brand__mark {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  background-color: var(--accent);
+  -webkit-mask: url("../assets/logo/logo.svg") center / contain no-repeat;
+  mask: url("../assets/logo/logo.svg") center / contain no-repeat;
+}
 .brand__name {
   font-size: var(--type-label);
   letter-spacing: 0.14em;
@@ -139,7 +147,20 @@ a { color: inherit; text-decoration: none; }
 .btn--ghost:hover { border-color: var(--ink); }
 
 /* ---------- Hero (slide 01) ---------- */
-.hero { padding-top: clamp(3.5rem, 8vw, 7rem); padding-bottom: clamp(3.5rem, 8vw, 7rem); background: var(--soft); }
+.hero { position: relative; padding-top: clamp(3.5rem, 8vw, 7rem); padding-bottom: clamp(3.5rem, 8vw, 7rem); background: var(--soft); overflow: hidden; }
+.hero .container { position: relative; z-index: 1; }
+.hero__logo {
+  position: absolute;
+  top: 50%;
+  right: clamp(-14rem, -18vw, -8rem);
+  transform: translateY(-50%);
+  width: clamp(42rem, 67.5vw, 69rem);
+  height: auto;
+  color: var(--ink);
+  opacity: 0.08;
+  z-index: 0;
+  pointer-events: none;
+}
 .hero__headline {
   font-size: var(--type-display);
   font-weight: 700;
@@ -156,6 +177,7 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.35;
 }
 .hero__actions { margin-top: clamp(1.75rem, 3.5vw, 2.75rem); display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.hero__actions .btn { font-size: var(--type-small); padding: 0.9em 1.9em; }
 .hero__meta {
   margin-top: clamp(3rem, 7vw, 6rem);
   display: flex;
@@ -229,6 +251,16 @@ a { color: inherit; text-decoration: none; }
 .card__text { font-size: var(--type-small); line-height: 1.5; opacity: 0.75; }
 .card .placeholder { margin-bottom: 2rem; }
 
+.card__media {
+  border-radius: var(--r-md);
+  overflow: hidden;
+  margin: -4rem -2.5rem 1.75rem;
+  aspect-ratio: 16 / 9;
+  box-shadow: 0 20px 45px -15px rgba(53,56,57,0.3);
+  background: var(--white);
+}
+.card__media img { width: 100%; height: 100%; object-fit: contain; display: block; }
+
 .card__icon { width: 56px; height: 56px; border-radius: var(--r-sm); margin-bottom: 1.75rem; flex: none; }
 .card__icon--ink { background: var(--ink); }
 .card__icon--accent { background: var(--accent); }
@@ -273,7 +305,26 @@ a { color: inherit; text-decoration: none; }
 .center .eyebrow { margin-bottom: 1.5rem; }
 .center .section-title { margin-bottom: 0.75rem; }
 .center__sub { font-size: var(--type-subtitle); opacity: 0.65; margin-bottom: clamp(2.5rem, 5vw, 4rem); }
-.gear-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.5rem, 3vw, 3.75rem); }
+.gear-showcase {
+  position: relative;
+  text-align: left;
+  height: clamp(30rem, 54vw, 46rem);
+  margin-top: clamp(1rem, 2vw, 2rem);
+}
+.gear-showcase__media {
+  position: absolute;
+  width: clamp(19rem, 36vw, 30rem);
+  aspect-ratio: 1 / 1;
+}
+.gear-showcase__media img { width: 100%; height: 100%; object-fit: contain; display: block; }
+.gear-showcase__media--1 { top: 0; right: clamp(0rem, 8vw, 6rem); z-index: 2; }
+.gear-showcase__media--2 { bottom: 0; left: clamp(0rem, 8vw, 6rem); z-index: 1; }
+
+.gear-showcase__caption { position: absolute; max-width: 22rem; }
+.gear-showcase__caption--1 { top: 0; left: 0; text-align: left; }
+.gear-showcase__caption--2 { bottom: 0; right: 0; text-align: right; }
+.gear-showcase__caption-title { font-size: var(--type-subtitle); font-weight: 600; margin-bottom: 0.75rem; }
+.gear-showcase__caption-text { font-size: var(--type-small); line-height: 1.5; opacity: 0.7; }
 
 /* ---------- CTA (slide 12) ---------- */
 .cta__headline { font-size: var(--type-display); font-weight: 700; letter-spacing: -0.02em; line-height: 1.05; margin: clamp(2rem, 5vw, 3.5rem) 0; }
