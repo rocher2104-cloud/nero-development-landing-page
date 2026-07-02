@@ -1,66 +1,44 @@
-/* Layout classes — moved from inline styles for responsive overrides */
+/* =========================================================
+   Responsive overrides — mobile-first collapse of the
+   multi-column deck layouts.
+   ========================================================= */
 
-.section-pad        { padding: 96px 56px; }
-.section-pad--sm    { padding: 80px 56px; }
-.hero-section       { padding: 160px 56px 72px; }
-.section-inner      { max-width: 1200px; }
-
-.two-col {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 80px;
-  align-items: start;
+/* ── Tablet / small laptop: 900px ─────────────────────── */
+@media (max-width: 900px) {
+  .grid--3 { grid-template-columns: 1fr 1fr; }
+  .reasons { grid-template-columns: 1fr; gap: clamp(2rem, 6vw, 3rem); }
+  .reason { padding-inline: 0; }
+  .reason + .reason { border-left: 0; border-top: 1px solid rgba(53,56,57,0.15); padding-top: clamp(2rem, 6vw, 3rem); }
 }
 
-.specs-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  border-top: 1px solid rgba(255,255,255,0.07);
-}
-
-.capture-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 80px;
-  align-items: start;
-}
-
-.field-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 36px;
-}
-
-/* ── Tablet: 768px ─────────────────────────────────────── */
+/* ── Tablet portrait: 768px ───────────────────────────── */
 @media (max-width: 768px) {
-  .section-pad, .section-pad--sm, .hero-section { padding-left: 24px; padding-right: 24px; }
-  .hero-section { padding-top: 100px; }
-  .two-col { grid-template-columns: 1fr; gap: 40px; }
-  .specs-grid { grid-template-columns: repeat(2, 1fr); }
-  .capture-grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-grid { grid-template-columns: 1fr; gap: 48px; }
-  .nav-links { gap: 20px; }
+  .split,
+  .stat-split,
+  .gear-grid { grid-template-columns: 1fr; }
+
+  /* When text + media stack, keep the media below the copy */
+  .split--media-first .split__media { order: 2; }
+
+  .split__aside { border-left: 0; border-top: 2px solid var(--accent); padding-left: 0; padding-top: 1.5rem; }
+
+  .stat-split { text-align: left; }
 }
 
-/* ── Mobile: 480px ─────────────────────────────────────── */
-@media (max-width: 480px) {
-  .section-pad, .section-pad--sm { padding: 56px 16px; }
-  .hero-section { padding: 80px 16px 48px; }
-  .specs-grid { grid-template-columns: repeat(2, 1fr); }
-  .capture-grid { grid-template-columns: 1fr; }
-  .field-row { grid-template-columns: 1fr; }
-  .nav-links a:not([href="#contact"]) { display: none; }
+/* ── Mobile: 560px ────────────────────────────────────── */
+@media (max-width: 560px) {
+  .grid--3,
+  .grid--4 { grid-template-columns: 1fr; }
+
+  .hero__meta { flex-direction: row; }
+
+  .cta__actions { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+
+  .site-header__inner .btn--ghost { display: none; }
+}
+
+/* ── Motion preferences ───────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .btn { transition: none; }
 }
