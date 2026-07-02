@@ -1,0 +1,11 @@
+# Vercel
+.vercel
+
+# OS
+.DS_Store
+
+# Claude Code (worktrees, launch config, session data)
+.claude/
+
+# Design source export (large bundled deck — not part of the deployed site)
+Nero Development Deck - standalone copy.html
