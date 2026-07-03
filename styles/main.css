@@ -232,6 +232,14 @@ a { color: inherit; text-decoration: none; }
 .placeholder--md { min-height: 220px; border-radius: var(--r-md); }
 .placeholder--md .placeholder__label { font-size: 0.9rem; }
 
+.split__media img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: var(--r-lg);
+  display: block;
+}
+
 .stock-note { margin-top: 1.5rem; font-size: 0.95rem; font-family: var(--mono); opacity: 0.45; }
 
 /* ---------- Card grids ---------- */
