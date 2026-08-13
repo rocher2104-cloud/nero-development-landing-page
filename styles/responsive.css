@@ -1,62 +1,92 @@
 /* =========================================================
-   Responsive overrides — mobile-first collapse of the
-   multi-column deck layouts.
+   Responsive overrides
    ========================================================= */
 
-/* ── Tablet / small laptop: 900px ─────────────────────── */
+/* ── Laptop / tablet: 1024px ──────────────────────────────── */
+@media (max-width: 1024px) {
+  .pipeline-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── Nav collapse + card grids: 900px ─────────────────────── */
 @media (max-width: 900px) {
-  .grid--3 { grid-template-columns: 1fr 1fr; }
-  .reasons { grid-template-columns: 1fr; gap: clamp(2rem, 6vw, 3rem); }
-  .reason { padding-inline: 0; }
-  .reason + .reason { border-left: 0; border-top: 1px solid rgba(53,56,57,0.15); padding-top: clamp(2rem, 6vw, 3rem); }
-}
+  .site-header { padding: 14px 20px; }
 
-/* ── Tablet portrait: 768px ───────────────────────────── */
-@media (max-width: 768px) {
-  .split,
-  .stat-split { grid-template-columns: 1fr; }
+  .nav { flex: none; margin-left: auto; }
+  .nav__toggle { display: flex; }
+  .nav__cta { display: none; }
 
-  /* When text + media stack, keep the media below the copy */
-  .split--media-first .split__media { order: 2; }
-
-  .gear-showcase {
-    height: auto;
-    display: flex;
+  .nav__menu {
+    position: fixed;
+    top: 66px;
+    left: 0;
+    right: 0;
+    background: var(--nero-black-2);
+    border-bottom: 1px solid var(--border-subtle);
     flex-direction: column;
-    gap: 2rem;
-    align-items: center;
+    align-items: stretch;
+    gap: 0;
+    padding: 0 16px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.25s ease, opacity 0.2s ease;
   }
-  .gear-showcase__media {
-    position: static;
-    width: min(20rem, 80vw);
-  }
-  .gear-showcase__caption {
-    position: static;
-    max-width: 26rem;
-    text-align: center;
+  .nav.is-open .nav__menu {
+    max-height: calc(100svh - 66px);
+    overflow-y: auto;
+    opacity: 1;
+    padding-block: 12px;
   }
 
-  .split__aside { border-left: 0; border-top: 2px solid var(--accent); padding-left: 0; padding-top: 1.5rem; }
+  .nav__group { width: 100%; }
+  .nav__group-label {
+    width: 100%;
+    justify-content: space-between;
+    padding: 16px 8px;
+    border-bottom: 1px solid var(--border-faint);
+    font-size: 0.875rem;
+  }
+  .nav__dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    border: none;
+    background: none;
+    padding: 4px 0 12px 8px;
+    display: none;
+  }
+  .nav__group.is-open .nav__dropdown { display: flex; }
+  .nav__group.is-open .nav__caret { transform: rotate(180deg); }
+  .nav__item { padding: 10px 6px; }
 
-  .stat-split { text-align: left; }
+  .nav__cta--mobile { display: flex; justify-content: center; margin: 16px 0 4px; }
+
+  .hw-grid { grid-template-columns: 1fr; }
+  .model-grid { grid-template-columns: 1fr; }
 }
 
-/* ── Mobile: 560px ────────────────────────────────────── */
+/* ── Tablet portrait: 768px ───────────────────────────────── */
+@media (max-width: 768px) {
+  .stat-grid { grid-template-columns: 1fr; }
+  .pipeline-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero__hud { display: none; }
+}
+
+/* ── Mobile: 560px ─────────────────────────────────────────── */
 @media (max-width: 560px) {
-  .grid--3,
-  .grid--4 { grid-template-columns: 1fr; }
-
-  .hero__meta { flex-direction: row; }
-
-  .hero__logo { width: 30rem; right: -13.5rem; opacity: 0.07; }
-
-  .cta__actions { flex-direction: column; align-items: flex-start; gap: 1.25rem; }
-
-  .site-header__inner .btn--ghost { display: none; }
+  .container { padding-inline: 1.25rem; }
+  .hero__content { padding-inline: 20px; }
+  .hero__actions { flex-direction: column; align-items: stretch; }
+  .hero__actions .btn { text-align: center; }
+  .flow { flex-wrap: wrap; row-gap: 0.5rem; }
+  .pipeline-flow { row-gap: 0.75rem; }
+  .pipeline-flow__arrow { margin: 0 10px; }
+  .site-footer__inner { flex-direction: column; align-items: flex-start; }
 }
 
-/* ── Motion preferences ───────────────────────────────── */
+/* ── Motion preferences ────────────────────────────────────── */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .btn { transition: none; }
+  .btn, .nav__dropdown, .nav__menu { transition: none; }
 }

@@ -1,4 +1,7 @@
-/* Google Sans - latin and latin-ext only */
+/* Google Sans Flex + Roboto + Roboto Mono — variable weights for the thin/light display type */
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700&family=Roboto+Mono:wght@400;500&display=swap');
+
+/* Google Sans (self-hosted) — latin and latin-ext, retained as a local fallback */
 
 @font-face {
   font-family: 'Google Sans';

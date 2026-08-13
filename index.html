@@ -3,12 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nero Development — Egocentric Training Data for Robotics</title>
-  <meta name="description" content="Recording infrastructure for cleaning crews, restaurants, and university labs — built to supply robotics teams with real, continuous, first-person data.">
-  <meta name="theme-color" content="#F5F5F5">
+  <title>Nero Development — The Data Infrastructure for Physical AI</title>
+  <meta name="description" content="Nero captures real work in real environments and turns it into structured training data for robotics and embodied AI. Purpose-built hardware, distributed collection, model-ready data.">
+  <meta name="theme-color" content="#101010">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='8.5' stroke='%23FF7538' stroke-width='1.5' fill='none'/%3E%3Ccircle cx='10' cy='10' r='3' fill='%23FF7538'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='4' y='4' width='12' height='12' fill='%23FF7538' transform='rotate(45 10 10)'/%3E%3C/svg%3E">
+
+  <meta property="og:title" content="Nero Development — The Data Infrastructure for Physical AI">
+  <meta property="og:description" content="Nero captures real work in real environments and turns it into structured training data for robotics and embodied AI.">
+  <meta property="og:type" content="website">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles/fonts.css">
@@ -17,282 +21,292 @@
 </head>
 <body>
 
-  <!-- ============ Header ============ -->
+  <!-- ============ Header / Nav ============ -->
   <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="brand" href="#top" aria-label="Nero Development home">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nero Development home">
         <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__name">Nero Development</span>
+        <span class="brand__name">NERO<span class="brand__name-dim"> DEV.</span></span>
       </a>
-      <a class="btn btn--ghost" href="#contact">Get in touch</a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Product <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="data-engine.html">
+                <span class="nav__item-name">Data Engine</span>
+                <span class="nav__item-desc">Capture to model-ready data</span>
+              </a>
+              <a class="nav__item" href="data-products.html">
+                <span class="nav__item-name">Data Products</span>
+                <span class="nav__item-desc">Sensor, perception &amp; task layers</span>
+              </a>
+              <a class="nav__item" href="capture-systems.html">
+                <span class="nav__item-name">Capture Systems</span>
+                <span class="nav__item-desc">Mono, stereo &amp; custom hardware</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Solutions <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="verticals.html">
+                <span class="nav__item-name">Verticals</span>
+                <span class="nav__item-desc">Warehouse, kitchen, workshop, retail</span>
+              </a>
+              <a class="nav__item" href="licensing.html">
+                <span class="nav__item-name">Licensing</span>
+                <span class="nav__item-desc">Dataset, exclusive &amp; continuous access</span>
+              </a>
+              <a class="nav__item" href="for-businesses.html">
+                <span class="nav__item-name">For Businesses</span>
+                <span class="nav__item-desc">Host capture, get compensated</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Company <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="security-governance.html">
+                <span class="nav__item-name">Security &amp; Governance</span>
+                <span class="nav__item-desc">Consent, redaction, data controls</span>
+              </a>
+              <a class="nav__item" href="company.html">
+                <span class="nav__item-name">Company</span>
+                <span class="nav__item-desc">Mission, team &amp; careers</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="btn btn--primary nav__cta nav__cta--mobile" href="build-a-dataset.html">Build a Dataset</a>
+        </div>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="build-a-dataset.html">Build a Dataset</a>
     </div>
   </header>
 
   <main id="top">
 
-    <!-- ============ 01 · Hero ============ -->
+    <!-- ============ Hero ============ -->
     <section class="hero" aria-label="Introduction">
-      <svg class="hero__logo" viewBox="0 0 420 422" aria-hidden="true">
-        <g fill="currentColor" fill-rule="nonzero">
-          <path d="M 265.0 120.0 L 263.0 44.0 L 257.0 28.0 L 247.0 21.0 L 233.0 21.0 L 191.0 32.0 L 77.0 58.0 L 72.0 61.0 L 68.0 69.0 L 69.0 78.0 L 73.0 83.0 L 144.0 133.0 L 161.0 143.0 L 167.0 143.0 L 218.0 130.0 Z"/>
-          <path d="M 279.0 39.0 L 278.0 73.0 L 280.0 116.0 L 329.0 104.0 L 334.0 104.0 L 341.0 101.0 L 351.0 100.0 L 354.0 98.0 L 376.0 94.0 L 379.0 92.0 L 379.0 89.0 L 301.0 34.0 L 297.0 32.0 L 288.0 32.0 L 282.0 35.0 Z"/>
-          <path d="M 38.0 95.0 L 32.0 101.0 L 30.0 106.0 L 34.0 283.0 L 37.0 294.0 L 46.0 301.0 L 58.0 304.0 L 65.0 304.0 L 144.0 286.0 L 144.0 215.0 L 141.0 156.0 L 129.0 144.0 L 58.0 95.0 L 50.0 92.0 Z"/>
-          <path d="M 281.0 134.0 L 280.0 143.0 L 282.0 179.0 L 284.0 273.0 L 286.0 277.0 L 291.0 282.0 L 371.0 338.0 L 381.0 342.0 L 389.0 340.0 L 393.0 337.0 L 396.0 331.0 L 391.0 132.0 L 388.0 125.0 L 385.0 121.0 L 376.0 116.0 L 360.0 115.0 Z"/>
-          <path d="M 265.0 138.0 L 186.0 156.0 L 176.0 160.0 L 165.0 170.0 L 159.0 181.0 L 157.0 191.0 L 159.0 282.0 L 238.0 264.0 L 249.0 259.0 L 261.0 247.0 L 265.0 240.0 L 268.0 229.0 L 267.0 162.0 Z"/>
-          <path d="M 344.0 343.0 L 339.0 335.0 L 263.0 282.0 L 257.0 280.0 L 251.0 280.0 L 234.0 285.0 L 212.0 289.0 L 204.0 292.0 L 162.0 301.0 L 160.0 303.0 L 162.0 380.0 L 168.0 395.0 L 176.0 401.0 L 190.0 401.0 L 236.0 389.0 L 245.0 388.0 L 333.0 367.0 L 338.0 364.0 L 343.0 357.0 Z"/>
-          <path d="M 147.0 383.0 L 148.0 367.0 L 145.0 305.0 L 94.0 318.0 L 89.0 318.0 L 85.0 320.0 L 51.0 327.0 L 45.0 330.0 L 41.0 335.0 L 44.0 340.0 L 124.0 395.0 L 134.0 395.0 L 139.0 393.0 L 144.0 389.0 Z"/>
-        </g>
-      </svg>
-      <div class="container">
-        <h1 class="hero__headline">Egocentric data,<br>captured where the<br>work happens.</h1>
-        <p class="hero__sub">Recording infrastructure for cleaning crews, restaurants, and university labs — built to supply robotics teams with real, continuous, first-person data.</p>
+      <img class="hero__bg" src="assets/photos/hero-perception.png" alt="" loading="eager">
+      <div class="hero__scrim" aria-hidden="true"></div>
+      <div class="hero__scrim-bottom" aria-hidden="true"></div>
+
+      <div class="hero__hud hero__hud--left mono" aria-hidden="true">
+        CAM_L_001 · SYNC_OK<br>
+        T+00:00:00.000<br>
+        TRACK_041 · ACTIVE
+      </div>
+      <div class="hero__hud hero__hud--right mono" aria-hidden="true">
+        OBJECT.CONTAINER<br>
+        ACTION.GRASP<br>
+        CONF 0.97
+      </div>
+
+      <div class="hero__content">
+        <h1 class="hero__headline">The data infrastructure<br>for physical AI</h1>
+        <p class="hero__sub">Nero captures real work in real environments and turns it into structured training data for robotics and embodied AI.</p>
+        <p class="hero__tags">Purpose-built hardware&nbsp;&nbsp;·&nbsp;&nbsp;Distributed collection&nbsp;&nbsp;·&nbsp;&nbsp;Model-ready data</p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#contact">Get in touch</a>
-          <a class="btn btn--ghost" href="#what-we-do">See how it works</a>
-        </div>
-        <div class="hero__meta">
-          <span>Partnership Overview</span>
-          <span>2026</span>
+          <a class="btn btn--primary" href="build-a-dataset.html">Build a Dataset</a>
+          <a class="btn btn--ghost" href="data-engine.html">Explore the Data Engine</a>
         </div>
       </div>
     </section>
 
-    <!-- ============ 02 · The Problem ============ -->
-    <section class="section section--white" aria-labelledby="problem-title">
+    <!-- ============ The Problem ============ -->
+    <section class="section" aria-labelledby="problem-title">
       <div class="container">
-        <p class="eyebrow">01 — The Problem</p>
-        <h2 class="section-title stack-title" id="problem-title">The data bottleneck in robotics</h2>
-        <div class="split split--top">
-          <p class="lead">Simulation and internet video can't capture the clutter, contact, and improvisation of real manual work. The manipulation data robotics teams need most — hands on tools, under pressure, in messy rooms — is the hardest to collect, and it doesn't exist at scale.</p>
-          <p class="split__aside">It has to be captured on site, from the worker's own point of view, over real shifts.</p>
+        <p class="eyebrow">The Problem</p>
+        <h2 class="section-title" id="problem-title">AI learned language from the internet.<br>Robots need the physical world.</h2>
+        <p class="lead">The actions robots need to understand happen inside warehouses, kitchens, workshops, stores, construction sites and thousands of other environments that were never recorded as machine-learning datasets. Nero builds the infrastructure to capture them.</p>
+        <div class="flow">
+          <span>Real work</span>
+          <span class="flow__arrow" aria-hidden="true">→</span>
+          <span class="flow__accent">Nero</span>
+          <span class="flow__arrow" aria-hidden="true">→</span>
+          <span>Physical AI</span>
         </div>
       </div>
     </section>
 
-    <!-- ============ 03 · What We Do ============ -->
-    <section class="section section--soft" id="what-we-do" aria-labelledby="what-title">
+    <!-- ============ The Network ============ -->
+    <section class="section section--charcoal" aria-labelledby="network-title">
       <div class="container">
-        <div class="split split--media-first">
-          <div>
-            <p class="eyebrow">02 — What We Do</p>
-            <h2 class="section-title" id="what-title">Egocentric data,<br>captured at scale</h2>
-            <p class="lead" style="margin-top:1.75rem;">Nero equips local businesses with wearable recording gear worn by the people already doing the work. Every shift becomes hours of first-person footage — real tasks, real environments, real hands.</p>
+        <p class="eyebrow">The Network</p>
+        <h2 class="section-title section-title--md" id="network-title">Real work. Captured at scale.</h2>
+        <p class="lead">Nero deploys capture systems into operating businesses instead of staging demonstrations in a lab.</p>
+
+        <div class="pipeline-flow">
+          <span>Sites</span><span class="pipeline-flow__arrow" aria-hidden="true">→</span>
+          <span>Workers</span><span class="pipeline-flow__arrow" aria-hidden="true">→</span>
+          <span>Shifts</span><span class="pipeline-flow__arrow" aria-hidden="true">→</span>
+          <span>Tasks</span><span class="pipeline-flow__arrow" aria-hidden="true">→</span>
+          <span>Hours</span><span class="pipeline-flow__arrow" aria-hidden="true">→</span>
+          <span class="pipeline-flow__end">Datasets</span>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-tile">
+            <p class="stat-tile__label">2027 Collection Target</p>
+            <p class="stat-tile__value">240</p>
+            <p class="stat-tile__caption">live collection sites</p>
           </div>
-          <div class="split__media">
-            <img src="assets/photos/capture-unit-worn.png" alt="Worker wearing the Nero capture unit on shift" loading="lazy">
+          <div class="stat-tile">
+            <p class="stat-tile__label">2027 Collection Target</p>
+            <p class="stat-tile__value">300,000</p>
+            <p class="stat-tile__caption">cumulative hours captured</p>
           </div>
         </div>
+        <p class="footnote">Building toward these figures by the end of 2027 — not current totals.</p>
       </div>
     </section>
 
-    <!-- ============ 04 · Where We Capture ============ -->
-    <section class="section section--white" aria-labelledby="where-title">
+    <!-- ============ Capture Systems ============ -->
+    <section class="section" aria-labelledby="hardware-title">
       <div class="container">
-        <p class="eyebrow">03 — Where We Capture</p>
-        <h2 class="section-title stack-title" id="where-title">Three verticals, one capture standard</h2>
-        <div class="grid grid--3">
-          <article class="card">
-            <div class="card__media"><img src="assets/photos/cleaning.png" alt="Cleaning crew worker performing surface prep and tool handling" loading="lazy"></div>
-            <h3 class="card__title">Cleaning</h3>
-            <p class="card__text">Surface prep, tool handling, spill response, and room-to-room navigation across varied sites.</p>
-          </article>
-          <article class="card">
-            <div class="card__media"><img src="assets/photos/restaurants.png" alt="Restaurant kitchen line during food prep and service" loading="lazy"></div>
-            <h3 class="card__title">Restaurants</h3>
-            <p class="card__text">Food prep, plating, and service work carried out under time pressure and constant change.</p>
-          </article>
-          <article class="card">
-            <div class="card__media"><img src="assets/photos/university-labs.png" alt="University lab bench during precision manipulation work" loading="lazy"></div>
-            <h3 class="card__title">University Labs</h3>
-            <p class="card__text">Precision manipulation, instrument handling, and structured, repeatable protocols.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+        <p class="eyebrow">Capture Systems</p>
+        <h2 class="section-title section-title--md" id="hardware-title">The dataset starts at the sensor.</h2>
+        <p class="lead lead--wide">Different models need different observations. Nero designs its own capture hardware so collection architecture can be changed around the requirements of the dataset, instead of forcing every customer into the same sensor configuration.</p>
 
-    <!-- ============ 05 · Data Operations & Privacy ============ -->
-    <section class="section section--soft" aria-labelledby="ops-title">
-      <div class="container">
-        <p class="eyebrow">04 — What We Handle</p>
-        <h2 class="section-title stack-title" id="ops-title">Data operations &amp; privacy</h2>
-        <div class="stat-split">
-          <div>
-            <div class="stat__figure">100%</div>
-            <p class="stat__caption">of on-site logistics, hardware, and privacy compliance — handled for you.</p>
-          </div>
-          <div class="grid grid--4">
-            <div class="card">
-              <span class="card__icon card__icon--ink" aria-hidden="true"></span>
-              <h3 class="card__title">On-site logistics</h3>
-              <p class="card__text">Full deployment run on location, start to finish.</p>
+        <div class="hw-grid">
+          <article class="hw-card">
+            <div class="hw-card__media">
+              <img src="assets/photos/mono-cap-cam.png" alt="Nero Mono Cap Cam — single-lens egocentric camera unit" loading="lazy">
             </div>
-            <div class="card">
-              <span class="card__icon card__icon--ink" aria-hidden="true"></span>
-              <h3 class="card__title">Hardware distribution</h3>
-              <p class="card__text">Units shipped, fitted, and swapped across every site.</p>
+            <div class="hw-card__body">
+              <p class="hw-card__eyebrow">Mono Cap Cam</p>
+              <h3 class="hw-card__title">High-volume first-person capture.</h3>
+              <p class="hw-card__text">Nero's standard monocular egocentric capture platform for scalable human demonstration and real-world perception datasets.</p>
+              <a class="link-arrow" href="capture-systems.html#mono">Explore Mono Cap Cam <span aria-hidden="true">→</span></a>
             </div>
-            <div class="card">
-              <span class="card__icon card__icon--accent" aria-hidden="true"></span>
-              <h3 class="card__title">Data sanitization</h3>
-              <p class="card__text">Every clip processed for PII blurring before delivery.</p>
-            </div>
-            <div class="card">
-              <span class="card__icon card__icon--accent" aria-hidden="true"></span>
-              <h3 class="card__title">Privacy releases</h3>
-              <p class="card__text">Biometric and property consent secured for every site.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 06 · Recording Gear ============ -->
-    <section class="section section--white" aria-labelledby="gear-title">
-      <div class="container center">
-        <p class="eyebrow">05 — The Hardware</p>
-        <h2 class="section-title" id="gear-title">Recording gear</h2>
-        <p class="center__sub">Designed and manufactured in-house.</p>
-        <div class="gear-showcase">
-          <div class="gear-showcase__caption gear-showcase__caption--1">
-            <h3 class="gear-showcase__caption-title">Cap-mounted unit</h3>
-            <p class="gear-showcase__caption-text">Low-profile and lightweight — built to disappear into a normal shift, not distract from it.</p>
-          </div>
-          <div class="gear-showcase__media gear-showcase__media--1"><img src="assets/photos/hardware1.png" alt="Nero capture unit, front view" loading="lazy"></div>
-          <div class="gear-showcase__media gear-showcase__media--2"><img src="assets/photos/hardware2.png" alt="Nero capture unit, worn in use" loading="lazy"></div>
-          <div class="gear-showcase__caption gear-showcase__caption--2">
-            <h3 class="gear-showcase__caption-title">Head-strap unit</h3>
-            <p class="gear-showcase__caption-text">A secure, hands-free fit for high-mobility tasks and extended, continuous-capture shifts.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 07 · Specifications ============ -->
-    <section class="section section--white" aria-labelledby="specs-title">
-      <div class="container">
-        <p class="eyebrow">06 — Specifications</p>
-        <h2 class="section-title stack-title" id="specs-title">Camera specifications</h2>
-        <div class="grid grid--4">
-          <div class="spec">
-            <div class="spec__value">1080p</div>
-            <div class="spec__label">Resolution</div>
-          </div>
-          <div class="spec">
-            <div class="spec__value">30<span class="spec__unit">FPS</span></div>
-            <div class="spec__label">Frame rate, up to</div>
-          </div>
-          <div class="spec">
-            <div class="spec__value spec__value--sm">Egocentric wearable mount</div>
-            <div class="spec__label">Form factor</div>
-          </div>
-          <div class="spec">
-            <div class="spec__value spec__value--sm">Continuous, all-shift capture</div>
-            <div class="spec__label">Recording mode, external power pack</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 08 · Custom Hardware ============ -->
-    <section class="section section--soft" aria-labelledby="custom-title">
-      <div class="container">
-        <div class="split split--media-first">
-          <div class="split__media">
-            <img src="assets/photos/custom-hardware.png" alt="Custom stereoscopic capture rig built for a partner engagement" loading="lazy">
-          </div>
-          <div>
-            <p class="eyebrow">07 — Custom Hardware</p>
-            <h2 class="section-title" id="custom-title">Built to spec, when the model needs more</h2>
-            <p class="lead" style="margin-top:1.75rem;">The standard unit covers most engagements. When a partner's training needs depth, a wider stereo baseline, or a synchronized multi-camera rig, we design and build it — including full stereoscopic recording hardware for contracted customers.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 09 · Adaptability ============ -->
-    <section class="section section--white" aria-labelledby="adapt-title">
-      <div class="container">
-        <p class="eyebrow">08 — Positioning</p>
-        <h2 class="section-title stack-title" id="adapt-title">Built for adaptability</h2>
-        <div class="grid grid--3">
-          <div>
-            <span class="card__icon card__icon--accent" style="width:64px;height:64px;" aria-hidden="true"></span>
-            <h3 class="card__title">Any environment</h3>
-            <p class="card__text">From cleaning routes to research benches, gear is fitted to the site, not the other way around.</p>
-          </div>
-          <div>
-            <span class="card__icon card__icon--accent" style="width:64px;height:64px;" aria-hidden="true"></span>
-            <h3 class="card__title">Any rig configuration</h3>
-            <p class="card__text">Standard monocular units today, custom stereoscopic and multi-camera builds on contract.</p>
-          </div>
-          <div>
-            <span class="card__icon card__icon--accent" style="width:64px;height:64px;" aria-hidden="true"></span>
-            <h3 class="card__title">Any task specification</h3>
-            <p class="card__text">Curation is matched to the exact manipulation task a partner's model is trained on.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ============ 10 · Partnership Models ============ -->
-    <section class="section section--soft" aria-labelledby="models-title">
-      <div class="container">
-        <p class="eyebrow">09 — Working Together</p>
-        <h2 class="section-title stack-title" id="models-title">Partnership models</h2>
-        <div class="grid grid--3">
-          <article class="card">
-            <h3 class="card__title">Custom collection</h3>
-            <p class="card__text">Define the task, the environment, and the camera spec — we deploy gear and deliver a matching dataset.</p>
           </article>
-          <article class="card">
-            <h3 class="card__title">Ongoing licensing</h3>
-            <p class="card__text">Subscribe to a continuous feed of egocentric footage across our existing verticals.</p>
-          </article>
-          <article class="card">
-            <h3 class="card__title">Exclusive verticals</h3>
-            <p class="card__text">Lock in dedicated capture within a business category, built around your roadmap.</p>
+          <article class="hw-card">
+            <div class="hw-card__media">
+              <img src="assets/photos/stereo-cap-cam.png" alt="Nero Stereo Cap Cam — dual-lens egocentric capture unit" loading="lazy">
+            </div>
+            <div class="hw-card__body">
+              <p class="hw-card__eyebrow">Stereo Cap Cam</p>
+              <h3 class="hw-card__title">Egocentric capture with spatial context.</h3>
+              <p class="hw-card__text">Synchronized stereo vision designed for datasets that need depth estimation, geometric understanding, hand-object spatial relationships and 3D scene reconstruction.</p>
+              <a class="link-arrow" href="capture-systems.html#stereo">Explore Stereo Cap Cam <span aria-hidden="true">→</span></a>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ 11 · Why Nero ============ -->
-    <section class="section section--white" aria-labelledby="why-title">
+    <!-- ============ Custom Sensor Stack ============ -->
+    <section class="section section--charcoal" aria-labelledby="custom-title">
       <div class="container">
-        <p class="eyebrow">10 — Summary</p>
-        <h2 class="section-title stack-title" id="why-title">Why Nero</h2>
-        <div class="reasons">
-          <div class="reason">
-            <div class="reason__num">1</div>
-            <h3 class="reason__title">Adaptable hardware</h3>
-            <p class="reason__text">Standard units today, custom builds — stereoscopic included — whenever a partner needs them.</p>
+        <p class="eyebrow">Custom Programs</p>
+        <h2 class="section-title section-title--md" id="custom-title">Your model defines the sensor stack.</h2>
+        <p class="lead lead--wide">Some programs need monocular RGB. Others need stereo vision, depth, inertial measurements, a wider camera baseline or synchronized observations from multiple viewpoints. Nero can engineer a capture configuration around the client's collection specification and deploy it through the same data infrastructure.</p>
+
+        <ul class="chips">
+          <li class="chip">RGB</li>
+          <li class="chip">Stereo</li>
+          <li class="chip">IMU</li>
+          <li class="chip">Audio</li>
+          <li class="chip">LiDAR</li>
+          <li class="chip">Multi-camera</li>
+          <li class="chip">Custom sensor</li>
+        </ul>
+        <p class="footnote">Available custom program configurations. Not every configuration is currently deployed on every vertical.</p>
+      </div>
+    </section>
+
+    <!-- ============ The Data Engine ============ -->
+    <section class="section" aria-labelledby="pipeline-title">
+      <div class="container">
+        <p class="eyebrow">The Data Engine</p>
+        <h2 class="section-title section-title--md" id="pipeline-title">From real work to model-ready data.</h2>
+
+        <ol class="pipeline-grid">
+          <li class="pipeline-stage">
+            <p class="pipeline-stage__num mono">01</p>
+            <p class="pipeline-stage__name">Capture</p>
+            <p class="pipeline-stage__desc">Real tasks, real environments, Nero hardware.</p>
+          </li>
+          <li class="pipeline-stage">
+            <p class="pipeline-stage__num mono">02</p>
+            <p class="pipeline-stage__name">Ingest</p>
+            <p class="pipeline-stage__desc">Encryption, integrity checks, sensor synchronization, dataset indexing.</p>
+          </li>
+          <li class="pipeline-stage">
+            <p class="pipeline-stage__num mono">03</p>
+            <p class="pipeline-stage__name">Process</p>
+            <p class="pipeline-stage__desc">Calibration, frame extraction, quality filtering, redaction where specified.</p>
+          </li>
+          <li class="pipeline-stage">
+            <p class="pipeline-stage__num mono">04</p>
+            <p class="pipeline-stage__name">Enrich</p>
+            <p class="pipeline-stage__desc">Tracking, segmentation, depth, pose, actions, interactions, language.</p>
+          </li>
+          <li class="pipeline-stage">
+            <p class="pipeline-stage__num mono">05</p>
+            <p class="pipeline-stage__name">Validate</p>
+            <p class="pipeline-stage__desc">Automated QA, human QA where specified, schema validation, coverage analysis.</p>
+          </li>
+          <li class="pipeline-stage">
+            <p class="pipeline-stage__num mono">06</p>
+            <p class="pipeline-stage__name">Deliver</p>
+            <p class="pipeline-stage__desc">Client schema, versioned datasets, API / object storage / batch, continuous feed.</p>
+          </li>
+        </ol>
+        <a class="link-arrow" href="data-engine.html">See the full Data Engine <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+    <!-- ============ Commercial Models ============ -->
+    <section class="section section--charcoal" aria-labelledby="models-title">
+      <div class="container">
+        <p class="eyebrow">Commercial Models</p>
+        <h2 class="section-title section-title--md" id="models-title">Instead of buying a static dataset, connect your training pipeline to the physical world.</h2>
+
+        <div class="model-grid">
+          <div class="model-card">
+            <p class="model-card__num mono">01</p>
+            <h3 class="model-card__title">Dataset License</h3>
+            <p class="model-card__text">Non-exclusive access to a Nero dataset.</p>
           </div>
-          <div class="reason">
-            <div class="reason__num">2</div>
-            <h3 class="reason__title">Real operating businesses</h3>
-            <p class="reason__text">Data comes from working cleaning crews, kitchens, and labs — not staged demonstrations.</p>
+          <div class="model-card">
+            <p class="model-card__num mono">02</p>
+            <h3 class="model-card__title">Exclusive Dataset</h3>
+            <p class="model-card__text">A collection program produced for one client with agreed exclusivity.</p>
           </div>
-          <div class="reason">
-            <div class="reason__num">3</div>
-            <h3 class="reason__title">Egocentric by design</h3>
-            <p class="reason__text">Every frame is captured from the worker's own point of view — the perspective robots need.</p>
+          <div class="model-card model-card--highlight">
+            <p class="model-card__num mono">03</p>
+            <h3 class="model-card__title">Continuous Data</h3>
+            <p class="model-card__text">An ongoing stream of newly captured and processed real-world data to an agreed specification.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ 12 · CTA ============ -->
-    <section class="section section--soft" id="contact" aria-labelledby="cta-title">
+    <!-- ============ Final CTA ============ -->
+    <section class="section cta" aria-labelledby="cta-title">
       <div class="container">
-        <div class="brand">
-          <span class="brand__mark" aria-hidden="true"></span>
-          <span class="brand__name">Nero Development</span>
-        </div>
-        <h2 class="cta__headline" id="cta-title">Let's build your dataset.</h2>
-        <div class="cta__actions">
-          <a class="btn btn--primary" href="mailto:inquiries@nerodevelopment.com">Get in touch</a>
-          <a class="cta__email" href="mailto:inquiries@nerodevelopment.com">inquiries@nerodevelopment.com</a>
-        </div>
+        <h2 class="cta__headline" id="cta-title">Build the dataset your model actually needs.</h2>
+        <a class="btn btn--primary btn--lg" href="build-a-dataset.html">Build a Dataset</a>
       </div>
     </section>
 
@@ -303,12 +317,17 @@
     <div class="container site-footer__inner">
       <div class="brand">
         <span class="brand__mark" aria-hidden="true"></span>
-        <span class="brand__name">Nero Development</span>
+        <span class="brand__name">NERO DEVELOPMENT</span>
       </div>
-      <a href="mailto:inquiries@nerodevelopment.com">inquiries@nerodevelopment.com</a>
-      <span>© 2026 Nero Development</span>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="data-engine.html">Data Engine</a>
+        <a href="data-products.html">Data Products</a>
+        <a href="capture-systems.html">Capture Systems</a>
+        <a href="build-a-dataset.html">Build a Dataset</a>
+      </nav>
     </div>
   </footer>
 
+  <script src="scripts/nav.js"></script>
 </body>
 </html>
