@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Capture Systems — Nero Development</title>
+  <meta name="description" content="Nero designs its own capture hardware — Mono Cap Cam, Stereo Cap Cam, and custom sensor configurations — so collection architecture can be built around what each dataset actually needs.">
+  <meta name="theme-color" content="#101010">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='4' y='4' width='12' height='12' fill='%23FF7538' transform='rotate(45 10 10)'/%3E%3C/svg%3E">
+
+  <meta property="og:title" content="Capture Systems — Nero Development">
+  <meta property="og:description" content="Nero designs its own capture hardware — Mono Cap Cam, Stereo Cap Cam, and custom sensor configurations — so collection architecture can be built around what each dataset actually needs.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/pages/capture-systems.css">
+</head>
+<body>
+
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nero Development home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO<span class="brand__name-dim"> DEV.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__group">
+            <button class="nav__group-label nav__group-label--active" type="button" aria-haspopup="true" aria-expanded="false">
+              Product <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="data-engine.html">
+                <span class="nav__item-name">Data Engine</span>
+                <span class="nav__item-desc">Capture to model-ready data</span>
+              </a>
+              <a class="nav__item" href="data-products.html">
+                <span class="nav__item-name">Data Products</span>
+                <span class="nav__item-desc">Sensor, perception &amp; task layers</span>
+              </a>
+              <a class="nav__item" href="capture-systems.html">
+                <span class="nav__item-name">Capture Systems</span>
+                <span class="nav__item-desc">Mono, stereo &amp; custom hardware</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Solutions <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="verticals.html">
+                <span class="nav__item-name">Verticals</span>
+                <span class="nav__item-desc">Warehouse, kitchen, workshop, retail</span>
+              </a>
+              <a class="nav__item" href="licensing.html">
+                <span class="nav__item-name">Licensing</span>
+                <span class="nav__item-desc">Dataset, exclusive &amp; continuous access</span>
+              </a>
+              <a class="nav__item" href="for-businesses.html">
+                <span class="nav__item-name">For Businesses</span>
+                <span class="nav__item-desc">Host capture, get compensated</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Company <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="security-governance.html">
+                <span class="nav__item-name">Security &amp; Governance</span>
+                <span class="nav__item-desc">Consent, redaction, data controls</span>
+              </a>
+              <a class="nav__item" href="company.html">
+                <span class="nav__item-name">Company</span>
+                <span class="nav__item-desc">Mission, team &amp; careers</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="btn btn--primary nav__cta nav__cta--mobile" href="build-a-dataset.html">Build a Dataset</a>
+        </div>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="build-a-dataset.html">Build a Dataset</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Page Intro ============ -->
+    <div class="page-intro">
+      <p class="eyebrow">Capture Systems</p>
+      <h1 class="page-intro__title">The dataset starts at the sensor.</h1>
+      <p class="lead lead--wide">Nero designs its own capture hardware so collection architecture can be changed around the requirements of the dataset, instead of forcing every customer into the same sensor configuration.</p>
+      <nav class="page-links" aria-label="Jump to section">
+        <a href="#mono">Mono Cap Cam</a>
+        <a href="#stereo">Stereo Cap Cam</a>
+        <a href="#custom">Custom Systems</a>
+      </nav>
+    </div>
+
+    <!-- ============ Mono Cap Cam ============ -->
+    <section class="section section--charcoal cap-section" id="mono" aria-labelledby="mono-title">
+      <div class="container">
+        <p class="cap-section__label mono">01 / MONO CAP CAM</p>
+        <h2 class="cap-section__title" id="mono-title">Scalable egocentric capture for physical AI.</h2>
+        <p class="lead lead--wide">Designed around collection, not consumer recording. Nero's standard monocular egocentric capture platform for scalable human demonstration and real-world perception datasets.</p>
+
+        <div class="cap-media-grid">
+          <div class="cap-media">
+            <img src="assets/photos/mono-cap-cam.png" alt="Nero Mono Cap Cam — single-lens egocentric camera unit on a black background" loading="lazy">
+          </div>
+          <div class="cap-media">
+            <img src="assets/photos/mono-cap-cam-worn.png" alt="Mono Cap Cam worn clipped to a white cap during outdoor capture" loading="lazy">
+          </div>
+        </div>
+
+        <div class="cap-detail-grid">
+          <div class="cap-detail">
+            <p class="cap-detail__label mono">Capture Architecture</p>
+            <dl class="spec-list">
+              <div class="spec-row">
+                <dt>Sensor</dt>
+                <dd class="mono">[RESOLUTION] / [FOV]</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Frame rate</dt>
+                <dd class="mono">[FRAME RATE]</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Audio</dt>
+                <dd class="mono">[AUDIO]</dd>
+              </div>
+              <div class="spec-row">
+                <dt>IMU</dt>
+                <dd class="mono">[IMU]</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Compute</dt>
+                <dd class="mono">[COMPUTE]</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Battery</dt>
+                <dd class="mono">[BATTERY]</dd>
+              </div>
+              <div class="spec-row">
+                <dt>Weight</dt>
+                <dd class="mono">[WEIGHT]</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="cap-detail">
+            <p class="cap-detail__label mono">What It Captures → What It Becomes</p>
+            <ul class="chips chip-row">
+              <li class="chip">RGB video</li>
+              <li class="chip">Motion / inertial data</li>
+              <li class="chip">Audio where enabled</li>
+              <li class="chip">Capture metadata</li>
+              <li class="chip">Timestamps</li>
+            </ul>
+            <p class="cap-flow-arrow" aria-hidden="true">↓</p>
+            <ul class="chips chip-row chip-row--accent">
+              <li class="chip chip--accent">Object interactions</li>
+              <li class="chip chip--accent">Action sequences</li>
+              <li class="chip chip--accent">Segmentation</li>
+              <li class="chip chip--accent">Tracking</li>
+              <li class="chip chip--accent">Task annotations</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footnote">Specifications shown as placeholders pending final hardware sign-off.</p>
+      </div>
+    </section>
+
+    <!-- ============ Stereo Cap Cam ============ -->
+    <section class="section cap-section" id="stereo" aria-labelledby="stereo-title">
+      <div class="container">
+        <p class="cap-section__label mono">02 / STEREO CAP CAM</p>
+        <h2 class="cap-section__title" id="stereo-title">Human demonstrations with spatial information.</h2>
+        <p class="lead lead--wide">Stereo Cap Cam adds synchronized binocular observations to Nero's egocentric capture stack, supporting datasets where geometry, depth and hand-object spatial relationships matter.</p>
+
+        <div class="cap-media-grid">
+          <div class="cap-media">
+            <img src="assets/photos/stereo-cap-cam.png" alt="Nero Stereo Cap Cam — dual-lens egocentric capture unit on a black background" loading="lazy">
+          </div>
+          <div class="cap-media">
+            <img src="assets/photos/stereo-cap-cam-worn.png" alt="Stereo Cap Cam worn on a black cap during studio capture" loading="lazy">
+          </div>
+        </div>
+
+        <div class="stereo-flow">
+          <ul class="chips chip-row stereo-flow__row" aria-label="Inputs">
+            <li class="chip">LEFT RGB</li>
+            <li class="stereo-flow__plus" aria-hidden="true">+</li>
+            <li class="chip">RIGHT RGB</li>
+            <li class="stereo-flow__plus" aria-hidden="true">+</li>
+            <li class="chip">IMU</li>
+            <li class="stereo-flow__plus" aria-hidden="true">+</li>
+            <li class="chip">TIME</li>
+          </ul>
+          <p class="cap-flow-arrow" aria-hidden="true">↓</p>
+          <ul class="chips chip-row chip-row--accent stereo-flow__row" aria-label="Processing pipeline">
+            <li class="chip chip--accent">RECTIFICATION</li>
+            <li class="stereo-flow__plus stereo-flow__plus--accent" aria-hidden="true">→</li>
+            <li class="chip chip--accent">DISPARITY</li>
+            <li class="stereo-flow__plus stereo-flow__plus--accent" aria-hidden="true">→</li>
+            <li class="chip chip--accent">DEPTH / 3D</li>
+          </ul>
+        </div>
+
+        <p class="footnote footnote--center">Depth accuracy, baseline and synchronization tolerance will be published with final hardware specifications.</p>
+      </div>
+    </section>
+
+    <!-- ============ Custom Capture Systems ============ -->
+    <section class="section section--charcoal cap-section" id="custom" aria-labelledby="custom-title">
+      <div class="container">
+        <p class="cap-section__label mono">03 / CUSTOM CAPTURE SYSTEMS</p>
+        <h2 class="cap-section__title" id="custom-title">Your model defines the sensor stack.</h2>
+        <p class="lead lead--wide">Some programs need monocular RGB. Others need stereo vision, depth, inertial measurements, a wider camera baseline or synchronized observations from multiple viewpoints. Nero can engineer a capture configuration around the client's collection specification and deploy it through the same data infrastructure.</p>
+
+        <div class="custom-grid">
+          <div class="custom-card">
+            <p class="custom-card__name">LiDAR</p>
+            <p class="custom-card__desc">Timestamped point clouds alongside visual capture.</p>
+          </div>
+          <div class="custom-card">
+            <p class="custom-card__name">Wider-baseline stereo</p>
+            <p class="custom-card__desc">Extended stereo separation for longer-range depth.</p>
+          </div>
+          <div class="custom-card">
+            <p class="custom-card__name">Multi-camera rigs</p>
+            <p class="custom-card__desc">Synchronized capture from multiple calibrated viewpoints.</p>
+          </div>
+          <div class="custom-card">
+            <p class="custom-card__name">Alternative sensor placement</p>
+            <p class="custom-card__desc">Chest, head or tool-mounted configurations.</p>
+          </div>
+          <div class="custom-card">
+            <p class="custom-card__name">Extended IMU</p>
+            <p class="custom-card__desc">Additional inertial sensors for finer motion tracking.</p>
+          </div>
+          <div class="custom-card">
+            <p class="custom-card__name">Client-specific rigs</p>
+            <p class="custom-card__desc">Bespoke hardware engineered to a program's exact specification.</p>
+          </div>
+        </div>
+
+        <p class="footnote">Presented as available custom engineering options. Not every configuration is currently deployed on every vertical.</p>
+      </div>
+    </section>
+
+    <!-- ============ Final CTA ============ -->
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 class="cta__headline" id="cta-title">Discuss a capture configuration for your program.</h2>
+        <a class="btn btn--primary btn--lg" href="build-a-dataset.html">Build a Dataset →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO DEVELOPMENT</span>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="data-engine.html">Data Engine</a>
+        <a href="data-products.html">Data Products</a>
+        <a href="build-a-dataset.html">Build a Dataset</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/nav.js"></script>
+</body>
+</html>

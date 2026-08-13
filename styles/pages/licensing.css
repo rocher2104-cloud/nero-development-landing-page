@@ -1,0 +1,98 @@
+/* =========================================================
+   Nero Development — Licensing
+   ========================================================= */
+
+/* ---------- Tier cards (extends shared .model-grid / .model-card) ---------- */
+.licensing-tier-grid {
+  align-items: stretch;
+}
+
+.licensing-tier-card {
+  padding: 2.75rem 2.25rem;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.licensing-tier-card__bullets {
+  list-style: none;
+  margin-top: auto;
+  padding-top: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.licensing-tier-card__bullets li {
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  padding-left: 1.25em;
+  position: relative;
+}
+
+.licensing-tier-card__bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--text-secondary);
+}
+
+.model-card--highlight .licensing-tier-card__bullets li,
+.model-card--highlight .licensing-tier-card__bullets li::before {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* ---------- Comparison table ---------- */
+.licensing-table-wrap {
+  margin-top: 3.5rem;
+  overflow-x: auto;
+}
+
+.licensing-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+}
+
+.licensing-table th,
+.licensing-table td {
+  padding: 18px 24px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-faint);
+  white-space: normal;
+}
+
+.licensing-table th:first-child,
+.licensing-table td:first-child {
+  padding-left: 0;
+}
+
+.licensing-table thead th {
+  font-size: var(--type-label);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--nero-silver);
+}
+
+.licensing-table__highlight-col {
+  color: var(--nero-orange) !important;
+}
+
+.licensing-table tbody td:first-child {
+  font-weight: 700;
+  color: var(--nero-white);
+  font-size: 0.875rem;
+}
+
+.licensing-table tbody td:not(:first-child) {
+  color: var(--nero-silver);
+  font-weight: 300;
+  font-size: 0.8125rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .licensing-tier-card { min-height: 0; }
+}

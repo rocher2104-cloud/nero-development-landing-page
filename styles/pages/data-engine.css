@@ -1,0 +1,75 @@
+/* =========================================================
+   Nero Development — Data Engine (page-specific)
+   ========================================================= */
+
+:root {
+  --nero-charcoal-3: #232323;
+}
+
+/* ---------- Pipeline detail ---------- */
+.pipeline-detail .container { max-width: 1100px; }
+
+.stage-list {
+  list-style: none;
+}
+
+.stage-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2.5rem;
+  padding-block: 2.75rem;
+  border-top: 1px solid var(--border-faint);
+}
+.stage-row:first-child { border-top: none; }
+
+.stage-row__label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.stage-row__num {
+  font-size: 0.75rem;
+  color: var(--nero-orange);
+}
+.stage-row__name {
+  font-size: clamp(1.5rem, 1.6vw + 1rem, 2rem);
+  font-weight: 200;
+  letter-spacing: -0.01em;
+}
+
+.stage-row__content { max-width: 60ch; }
+.stage-row__desc {
+  font-size: var(--type-body);
+  font-weight: 300;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.stage-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin-top: 1.5rem;
+}
+.stage-tag {
+  padding: 8px 14px;
+  background: var(--nero-charcoal-3);
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  .stage-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-block: 2rem;
+  }
+  .stage-row__label {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.75rem;
+  }
+}

@@ -1,0 +1,152 @@
+/* =========================================================
+   Nero Development — Build a Dataset (page-specific)
+   ========================================================= */
+
+:root {
+  --nero-charcoal-3: #232323;
+}
+
+/* ---------- Illustrative example panel ---------- */
+.spec-example__label {
+  font-size: var(--type-label);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+.spec-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--nero-charcoal-6);
+  margin-top: 1.75rem;
+}
+
+.spec-panel__col {
+  padding: 2rem;
+}
+.spec-panel__col--left {
+  background: var(--nero-charcoal-1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.spec-panel__col--right {
+  background: var(--nero-black-1);
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-group__label {
+  font-size: var(--type-label);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--nero-silver);
+  margin-bottom: 0.75rem;
+}
+
+.spec-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+.spec-chip {
+  padding: 9px 16px;
+  font-size: 0.75rem;
+  letter-spacing: 0.3px;
+  background: var(--nero-charcoal-3);
+  color: var(--nero-silver);
+  border: 1px solid var(--border-subtle);
+}
+.spec-chip--selected {
+  background: var(--nero-orange);
+  color: #fff;
+  border-color: var(--nero-orange);
+}
+
+.spec-panel__right-label {
+  font-size: var(--type-label);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--nero-silver);
+}
+.spec-narrative {
+  font-size: 0.9375rem;
+  color: #fff;
+  line-height: 1.8;
+  margin-top: 1.25rem;
+}
+.spec-footnote {
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-faint);
+}
+
+/* ---------- Contact form ---------- */
+.contact-section .eyebrow { margin-bottom: 1.75rem; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 720px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nero-silver);
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  background: var(--nero-charcoal-3);
+  border: 1px solid var(--border-subtle);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.875rem;
+  padding: 14px 16px;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+.form-input:focus { border-color: var(--nero-silver); }
+.form-input::placeholder { color: var(--nero-silver); opacity: 0.7; }
+
+.form-textarea {
+  resize: vertical;
+  line-height: 1.6;
+  min-height: 120px;
+}
+
+.contact-form__submit {
+  align-self: flex-start;
+}
+
+.form-status {
+  display: none;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: -0.5rem;
+}
+.form-status--visible {
+  display: block;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  .spec-panel { grid-template-columns: 1fr; }
+  .spec-panel__col { padding: 1.5rem; }
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Products — Nero Development</title>
+  <meta name="description" content="Nero produces layered datasets — raw sensor streams, perception annotations, spatial/temporal understanding, and task-level behavior annotations — delivered into your existing training stack.">
+  <meta name="theme-color" content="#101010">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='4' y='4' width='12' height='12' fill='%23FF7538' transform='rotate(45 10 10)'/%3E%3C/svg%3E">
+
+  <meta property="og:title" content="Data Products — Nero Development">
+  <meta property="og:description" content="Nero produces layered datasets — raw sensor streams, perception annotations, spatial/temporal understanding, and task-level behavior annotations — delivered into your existing training stack.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/pages/data-products.css">
+</head>
+<body>
+
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nero Development home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO<span class="brand__name-dim"> DEV.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__group">
+            <button class="nav__group-label nav__group-label--active" type="button" aria-haspopup="true" aria-expanded="false">
+              Product <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="data-engine.html">
+                <span class="nav__item-name">Data Engine</span>
+                <span class="nav__item-desc">Capture to model-ready data</span>
+              </a>
+              <a class="nav__item" href="data-products.html">
+                <span class="nav__item-name">Data Products</span>
+                <span class="nav__item-desc">Sensor, perception &amp; task layers</span>
+              </a>
+              <a class="nav__item" href="capture-systems.html">
+                <span class="nav__item-name">Capture Systems</span>
+                <span class="nav__item-desc">Mono, stereo &amp; custom hardware</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Solutions <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="verticals.html">
+                <span class="nav__item-name">Verticals</span>
+                <span class="nav__item-desc">Warehouse, kitchen, workshop, retail</span>
+              </a>
+              <a class="nav__item" href="licensing.html">
+                <span class="nav__item-name">Licensing</span>
+                <span class="nav__item-desc">Dataset, exclusive &amp; continuous access</span>
+              </a>
+              <a class="nav__item" href="for-businesses.html">
+                <span class="nav__item-name">For Businesses</span>
+                <span class="nav__item-desc">Host capture, get compensated</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Company <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="security-governance.html">
+                <span class="nav__item-name">Security &amp; Governance</span>
+                <span class="nav__item-desc">Consent, redaction, data controls</span>
+              </a>
+              <a class="nav__item" href="company.html">
+                <span class="nav__item-name">Company</span>
+                <span class="nav__item-desc">Mission, team &amp; careers</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="btn btn--primary nav__cta nav__cta--mobile" href="build-a-dataset.html">Build a Dataset</a>
+        </div>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="build-a-dataset.html">Build a Dataset</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Page Intro ============ -->
+    <section class="page-intro">
+      <p class="eyebrow">Data Products</p>
+      <h1 class="page-intro__title">Nero doesn't sell one dataset format.</h1>
+      <p class="lead lead--wide">It produces different layers of data depending on what a model needs — from raw synchronized sensor streams up to task-level behavioral annotations. Each layer below is available where the capture configuration and annotation program support it.</p>
+    </section>
+
+    <!-- ============ Layer 01 — Sensor Data ============ -->
+    <section class="section" aria-labelledby="layer-01-title">
+      <div class="container">
+        <div class="layer-head">
+          <p class="layer-head__label mono">LAYER 01</p>
+          <h2 class="layer-head__name" id="layer-01-title">Sensor Data</h2>
+        </div>
+
+        <table class="kv-table">
+          <tbody>
+            <tr>
+              <td class="kv-table__k">Egocentric RGB</td>
+              <td class="kv-table__v">First-person monocular video aligned to timestamps and capture metadata.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">Stereo RGB</td>
+              <td class="kv-table__v">Hardware-synchronized left/right image streams.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">Audio</td>
+              <td class="kv-table__v">Time-aligned environmental or spoken audio where required.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">IMU</td>
+              <td class="kv-table__v">Accelerometer and gyroscope streams synchronized to visual observations.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">Depth</td>
+              <td class="kv-table__v">Stereo-derived, RGB-D or other depth representations where capture hardware supports it.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">LiDAR</td>
+              <td class="kv-table__v">Timestamped point clouds for programs using LiDAR-equipped capture rigs.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">Multi-view</td>
+              <td class="kv-table__v">Synchronized video from multiple calibrated cameras.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">Calibration</td>
+              <td class="kv-table__v">Intrinsics, extrinsics, distortion parameters and coordinate-frame metadata.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ Layer 02 — Perception Annotations ============ -->
+    <section class="section section--charcoal" aria-labelledby="layer-02-title">
+      <div class="container">
+        <div class="layer-head">
+          <p class="layer-head__label mono">LAYER 02</p>
+          <h2 class="layer-head__name" id="layer-02-title">Perception Annotations</h2>
+        </div>
+        <p class="lead lead--wide">Panoptic segmentation creates one unified pixel-level representation of a scene, covering both countable object instances (things) and background or material classes (stuff).</p>
+
+        <div class="perception-grid">
+          <div class="perception-card">
+            <h3 class="perception-card__title">Object Detection</h3>
+            <p class="perception-card__text">class_id, bounding_box, frame_id, confidence, track_id — for objects such as tools, containers, shelving, packages, food items and components.</p>
+          </div>
+          <div class="perception-card">
+            <h3 class="perception-card__title">Semantic Segmentation</h3>
+            <p class="perception-card__text">Every pixel classified by what it represents: floor, wall, bench, shelving, human, machinery.</p>
+          </div>
+          <div class="perception-card">
+            <h3 class="perception-card__title">Instance Segmentation</h3>
+            <p class="perception-card__text">Individual objects receive separate pixel masks — cup_001, cup_002, cup_003 — instead of one shared class mask.</p>
+          </div>
+          <div class="perception-card">
+            <h3 class="perception-card__title">Panoptic Segmentation</h3>
+            <p class="perception-card__text">Semantic and instance understanding combined into one coherent scene representation, covering both things and stuff.</p>
+          </div>
+        </div>
+
+        <div class="tile-row">
+          <div class="info-tile">
+            <p class="info-tile__title">Optical Flow</p>
+            <p class="info-tile__text">Per-pixel motion vectors between frames.</p>
+          </div>
+          <div class="info-tile">
+            <p class="info-tile__title">Depth / Disparity</p>
+            <p class="info-tile__text">For stereo datasets, rectified pairs plus derived depth where specified.</p>
+          </div>
+          <div class="info-tile">
+            <p class="info-tile__title">Camera Trajectory</p>
+            <p class="info-tile__text">Position and orientation over time, where recoverable to spec.</p>
+          </div>
+          <div class="info-tile">
+            <p class="info-tile__title">6D Object Pose</p>
+            <p class="info-tile__text">Position and orientation of a tracked object, for supported programs.</p>
+          </div>
+        </div>
+
+        <p class="example-label">EXAMPLE — ANNOTATED FRAME</p>
+        <figure class="example-figure">
+          <img src="assets/photos/panoptic-segmentation-example.png" alt="Egocentric kitchen capture panoptic-segmented, showing a chef plating food with colored region overlays labeling chef, hands, food, chopsticks, stack of plates and other scene elements, plus a color-key legend along the bottom." loading="lazy">
+          <figcaption class="example-figure__caption">One frame from an egocentric kitchen capture, panoptic-segmented — every object, surface and hand instance labeled.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ Layer 03 — Spatial & Temporal Understanding ============ -->
+    <section class="section" aria-labelledby="layer-03-title">
+      <div class="container">
+        <div class="layer-head">
+          <p class="layer-head__label mono">LAYER 03</p>
+          <h2 class="layer-head__name" id="layer-03-title">Spatial &amp; Temporal Understanding</h2>
+        </div>
+
+        <table class="kv-table">
+          <tbody>
+            <tr>
+              <td class="kv-table__k">Object Tracking</td>
+              <td class="kv-table__v">Persistent IDs across time — cup_014 at frame 1042 remains cup_014 at frame 1187.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">Hand Tracking / Pose</td>
+              <td class="kv-table__v">2D hand boxes, 2D or 3D keypoints, left/right identity, contact state and grasp state, depending on specification.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">Hand-Object Interaction</td>
+              <td class="kv-table__v">Structured events describing actor, action, object and interaction time window.</td>
+            </tr>
+            <tr>
+              <td class="kv-table__k">Object State Changes</td>
+              <td class="kv-table__v">closed → open, whole → cut, empty → filled, unassembled → assembled, dirty → clean, off → on.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="code-example">
+          <p class="code-example__label">EXAMPLE — HAND-OBJECT INTERACTION</p>
+          <pre class="code-example__body mono">actor: right_hand
+action: grasp
+object: screwdriver_04
+start_time: 21.43
+end_time: 22.07</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Layer 04 — Task & Behavior Annotations ============ -->
+    <section class="section section--charcoal" aria-labelledby="layer-04-title">
+      <div class="container">
+        <div class="layer-head">
+          <p class="layer-head__label mono">LAYER 04</p>
+          <h2 class="layer-head__name" id="layer-04-title">Task &amp; Behavior Annotations</h2>
+        </div>
+        <p class="lead lead--wide">Datasets can be structured around episodes: a bounded task performed by one worker, broken into timestamped segments, each carrying its own verb, object, hand and outcome.</p>
+
+        <div class="task-card">
+          <p class="task-card__label mono">TASK</p>
+          <h3 class="task-card__title">Restock beverage refrigerator</h3>
+          <p class="task-card__episode mono">EPISODE: warehouse_024_worker_07_2027-04-15_00184</p>
+
+          <ol class="task-segments">
+            <li class="task-segment">
+              <span class="task-segment__time mono">00:00–00:04</span>
+              <span class="task-segment__action">approach refrigerator</span>
+            </li>
+            <li class="task-segment">
+              <span class="task-segment__time mono">00:04–00:06</span>
+              <span class="task-segment__action">open door</span>
+            </li>
+            <li class="task-segment">
+              <span class="task-segment__time mono">00:06–00:11</span>
+              <span class="task-segment__action">pick up bottle crate</span>
+            </li>
+            <li class="task-segment">
+              <span class="task-segment__time mono">00:11–00:23</span>
+              <span class="task-segment__action">place bottles onto shelf</span>
+            </li>
+            <li class="task-segment">
+              <span class="task-segment__time mono">00:23–00:25</span>
+              <span class="task-segment__action">close door</span>
+            </li>
+          </ol>
+
+          <div class="task-card__meta mono">
+            <p>verb: place · noun: bottle · target: refrigerator shelf</p>
+            <p>hand: right · success: true</p>
+            <p>object_before: in crate · object_after: on shelf</p>
+          </div>
+        </div>
+
+        <p class="footnote">Nero can also support natural-language task descriptions, step and subtask hierarchies, narrations, success/failure labels, safety events, interaction intent, affordance labels and long-horizon task graphs, where the program specification calls for them.</p>
+      </div>
+    </section>
+
+    <!-- ============ Delivery Formats ============ -->
+    <section class="section" aria-labelledby="delivery-title">
+      <div class="container">
+        <p class="eyebrow">Delivery</p>
+        <h2 class="section-title section-title--md" id="delivery-title">Delivered into your stack, not ours.</h2>
+        <p class="lead lead--wide">Nero datasets can be packaged around a client's existing training and ingestion architecture rather than requiring a proprietary consumption format.</p>
+
+        <div class="format-grid">
+          <div class="format-card">
+            <h3 class="format-card__title">Video</h3>
+            <p class="format-card__text">MP4 or other agreed encoded streams, frame sequences where required, rectified stereo streams, original/raw capture where contracted.</p>
+          </div>
+          <div class="format-card">
+            <h3 class="format-card__title">Annotation</h3>
+            <p class="format-card__text">JSON, JSONL, COCO-style structures, ASAM OpenLABEL, client-defined schemas.</p>
+          </div>
+          <div class="format-card">
+            <h3 class="format-card__title">Robotics / Multimodal Logs</h3>
+            <p class="format-card__text">MCAP, ROS-compatible message structures, Protobuf, client-defined message schemas.</p>
+          </div>
+          <div class="format-card">
+            <h3 class="format-card__title">Tabular Metadata</h3>
+            <p class="format-card__text">Parquet, CSV, JSONL.</p>
+          </div>
+          <div class="format-card format-card--wide">
+            <h3 class="format-card__title">Robot-Learning Compatibility</h3>
+            <p class="format-card__text">Conversion into client-defined episodic structures, including RLDS- or LeRobot-compatible schemas, where the necessary observation, state and action fields exist.</p>
+          </div>
+        </div>
+
+        <p class="footnote">Where the source data contains the required observation, state and action fields, datasets may also be converted into episodic structures compatible with robotics data frameworks such as RLDS or LeRobot. Ordinary human video does not inherently contain robot joint actions or proprioceptive state — those conversions apply only when the underlying capture and annotation program produced that information.</p>
+      </div>
+    </section>
+
+    <!-- ============ Final CTA ============ -->
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 class="cta__headline" id="cta-title">Specify the dataset your model needs.</h2>
+        <a class="btn btn--primary btn--lg" href="build-a-dataset.html">Build a Dataset →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO DEVELOPMENT</span>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="data-engine.html">Data Engine</a>
+        <a href="capture-systems.html">Capture Systems</a>
+        <a href="build-a-dataset.html">Build a Dataset</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/nav.js"></script>
+</body>
+</html>

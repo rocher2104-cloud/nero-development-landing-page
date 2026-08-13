@@ -1,0 +1,124 @@
+/* =========================================================
+   Nero Development — Capture Systems
+   ========================================================= */
+
+:root {
+  --nero-charcoal-3: #232323;
+}
+
+/* ---------- Section framing ---------- */
+.cap-section__label {
+  font-size: var(--type-label);
+  letter-spacing: 1.5px;
+  color: var(--nero-orange);
+  margin-bottom: 1.25rem;
+}
+.cap-section__title {
+  font-size: var(--type-h2);
+  font-weight: 200;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  max-width: 22ch;
+}
+
+/* ---------- Product media grid ---------- */
+.cap-media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--nero-charcoal-6);
+  margin-top: 3.5rem;
+}
+.cap-media { aspect-ratio: 3 / 2; overflow: hidden; background: var(--nero-black-1); }
+.cap-media img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ---------- Detail grid: specs + capture flow ---------- */
+.cap-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  margin-top: clamp(3rem, 6vw, 4.5rem);
+}
+.cap-detail__label {
+  font-size: var(--type-label);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* ---------- Spec rows ---------- */
+.spec-list { display: flex; flex-direction: column; }
+.spec-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-faint);
+  font-size: 0.9375rem;
+}
+.spec-row:last-child { border-bottom: 1px solid var(--border-faint); }
+.spec-row dt { color: var(--text-primary); font-weight: 300; }
+.spec-row dd { color: var(--nero-silver); font-size: 0.8125rem; text-align: right; }
+
+/* ---------- Capture → becomes chip rows ---------- */
+.chip-row { margin-top: 0; }
+.chip-row--accent .chip--accent {
+  background: var(--nero-orange);
+  border-color: var(--nero-orange);
+  color: #fff;
+}
+.chip { background: var(--nero-charcoal-3); }
+.cap-flow-arrow {
+  text-align: center;
+  color: var(--nero-orange);
+  font-size: 1.5rem;
+  margin: 1.25rem 0;
+  line-height: 1;
+}
+
+/* ---------- Stereo processing flow ---------- */
+.stereo-flow { margin-top: clamp(3rem, 6vw, 4.5rem); text-align: center; }
+.stereo-flow__row {
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.stereo-flow__plus {
+  color: var(--nero-charcoal-6);
+  font-size: 1rem;
+  list-style: none;
+}
+.stereo-flow__plus--accent { color: var(--nero-orange); }
+
+/* ---------- Footnote alignment ---------- */
+.footnote--center { text-align: center; }
+
+/* ---------- Custom systems grid ---------- */
+.custom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1px;
+  background: var(--nero-charcoal-6);
+  margin-top: 3.5rem;
+}
+.custom-card { background: var(--nero-black-1); padding: 24px; }
+.custom-card__name { font-size: 0.9375rem; color: #fff; font-weight: 400; }
+.custom-card__desc { font-size: 0.75rem; color: var(--nero-silver); margin-top: 10px; line-height: 1.6; }
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .cap-detail-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+@media (max-width: 768px) {
+  .cap-media-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 560px) {
+  .spec-row { flex-direction: column; align-items: flex-start; gap: 0.25rem; }
+  .spec-row dd { text-align: left; }
+  .stereo-flow__row { flex-direction: column; }
+  .stereo-flow__plus { transform: rotate(90deg); }
+}

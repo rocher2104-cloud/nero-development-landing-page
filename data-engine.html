@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Engine — Nero Development</title>
+  <meta name="description" content="Nero operates a single continuous system connecting real physical work to the datasets used to train robotics and embodied AI models — capture, ingest, process, enrich, validate, deliver.">
+  <meta name="theme-color" content="#101010">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='4' y='4' width='12' height='12' fill='%23FF7538' transform='rotate(45 10 10)'/%3E%3C/svg%3E">
+
+  <meta property="og:title" content="Data Engine — Nero Development">
+  <meta property="og:description" content="Nero operates a single continuous system connecting real physical work to the datasets used to train robotics and embodied AI models — capture, ingest, process, enrich, validate, deliver.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/pages/data-engine.css">
+</head>
+<body>
+
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nero Development home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO<span class="brand__name-dim"> DEV.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__group">
+            <button class="nav__group-label nav__group-label--active" type="button" aria-haspopup="true" aria-expanded="false">
+              Product <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="data-engine.html">
+                <span class="nav__item-name">Data Engine</span>
+                <span class="nav__item-desc">Capture to model-ready data</span>
+              </a>
+              <a class="nav__item" href="data-products.html">
+                <span class="nav__item-name">Data Products</span>
+                <span class="nav__item-desc">Sensor, perception &amp; task layers</span>
+              </a>
+              <a class="nav__item" href="capture-systems.html">
+                <span class="nav__item-name">Capture Systems</span>
+                <span class="nav__item-desc">Mono, stereo &amp; custom hardware</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Solutions <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="verticals.html">
+                <span class="nav__item-name">Verticals</span>
+                <span class="nav__item-desc">Warehouse, kitchen, workshop, retail</span>
+              </a>
+              <a class="nav__item" href="licensing.html">
+                <span class="nav__item-name">Licensing</span>
+                <span class="nav__item-desc">Dataset, exclusive &amp; continuous access</span>
+              </a>
+              <a class="nav__item" href="for-businesses.html">
+                <span class="nav__item-name">For Businesses</span>
+                <span class="nav__item-desc">Host capture, get compensated</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Company <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="security-governance.html">
+                <span class="nav__item-name">Security &amp; Governance</span>
+                <span class="nav__item-desc">Consent, redaction, data controls</span>
+              </a>
+              <a class="nav__item" href="company.html">
+                <span class="nav__item-name">Company</span>
+                <span class="nav__item-desc">Mission, team &amp; careers</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="btn btn--primary nav__cta nav__cta--mobile" href="build-a-dataset.html">Build a Dataset</a>
+        </div>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="build-a-dataset.html">Build a Dataset</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Page Intro ============ -->
+    <div class="page-intro">
+      <p class="eyebrow">Data Engine</p>
+      <h1 class="page-intro__title">Capture, in real environments. Data, on delivery.</h1>
+      <p class="lead lead--wide">Nero operates a single continuous system connecting real physical work to the datasets used to train robotics and embodied AI models. Every stage is engineered end to end: Nero controls the hardware, the ingestion pipeline, the annotation process and the delivery format.</p>
+    </div>
+
+    <!-- ============ Pipeline Detail ============ -->
+    <section class="section pipeline-detail" aria-labelledby="pipeline-detail-title">
+      <div class="container">
+        <h2 class="sr-only" id="pipeline-detail-title">Pipeline stages</h2>
+
+        <ol class="stage-list">
+          <li class="stage-row">
+            <div class="stage-row__label">
+              <p class="stage-row__num mono">01</p>
+              <h3 class="stage-row__name">Capture</h3>
+            </div>
+            <div class="stage-row__content">
+              <p class="stage-row__desc">Nero-designed capture hardware deployed into real operating businesses, recording first-person work rather than staged demonstrations.</p>
+              <ul class="stage-tags">
+                <li class="stage-tag">Egocentric RGB</li>
+                <li class="stage-tag">Stereo RGB</li>
+                <li class="stage-tag">IMU</li>
+                <li class="stage-tag">Audio</li>
+                <li class="stage-tag">On-device metadata</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="stage-row">
+            <div class="stage-row__label">
+              <p class="stage-row__num mono">02</p>
+              <h3 class="stage-row__name">Ingest</h3>
+            </div>
+            <div class="stage-row__content">
+              <p class="stage-row__desc">Recorded data moves off-device into Nero's pipeline with integrity checks, encryption in transit, sensor synchronization and dataset indexing.</p>
+              <ul class="stage-tags">
+                <li class="stage-tag">Encryption</li>
+                <li class="stage-tag">Integrity checks</li>
+                <li class="stage-tag">Sync</li>
+                <li class="stage-tag">Indexing</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="stage-row">
+            <div class="stage-row__label">
+              <p class="stage-row__num mono">03</p>
+              <h3 class="stage-row__name">Process</h3>
+            </div>
+            <div class="stage-row__content">
+              <p class="stage-row__desc">Raw captures are calibrated, split into frames or clips, filtered for quality and redacted where a client's specification requires it.</p>
+              <ul class="stage-tags">
+                <li class="stage-tag">Calibration</li>
+                <li class="stage-tag">Frame extraction</li>
+                <li class="stage-tag">Quality filtering</li>
+                <li class="stage-tag">Redaction</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="stage-row">
+            <div class="stage-row__label">
+              <p class="stage-row__num mono">04</p>
+              <h3 class="stage-row__name">Enrich</h3>
+            </div>
+            <div class="stage-row__content">
+              <p class="stage-row__desc">Structured labels are added to the underlying capture: tracking, segmentation, depth, pose, actions, interactions and language annotations, depending on the dataset specification.</p>
+              <ul class="stage-tags">
+                <li class="stage-tag">Tracking</li>
+                <li class="stage-tag">Segmentation</li>
+                <li class="stage-tag">Depth</li>
+                <li class="stage-tag">Pose</li>
+                <li class="stage-tag">Actions</li>
+                <li class="stage-tag">Language</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="stage-row">
+            <div class="stage-row__label">
+              <p class="stage-row__num mono">05</p>
+              <h3 class="stage-row__name">Validate</h3>
+            </div>
+            <div class="stage-row__content">
+              <p class="stage-row__desc">Automated checks and human QA where specified confirm the dataset matches its schema and covers the required task distribution before delivery.</p>
+              <ul class="stage-tags">
+                <li class="stage-tag">Automated QA</li>
+                <li class="stage-tag">Human QA</li>
+                <li class="stage-tag">Schema validation</li>
+                <li class="stage-tag">Coverage analysis</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="stage-row">
+            <div class="stage-row__label">
+              <p class="stage-row__num mono">06</p>
+              <h3 class="stage-row__name">Deliver</h3>
+            </div>
+            <div class="stage-row__content">
+              <p class="stage-row__desc">The finished dataset is versioned and packaged into the client's schema, delivered via API, object storage or batch export, or streamed continuously under a Continuous Data program.</p>
+              <ul class="stage-tags">
+                <li class="stage-tag">Client schema</li>
+                <li class="stage-tag">Versioning</li>
+                <li class="stage-tag">API / object storage</li>
+                <li class="stage-tag">Continuous feed</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Why It Matters ============ -->
+    <section class="section section--charcoal" aria-labelledby="why-title">
+      <div class="container">
+        <p class="eyebrow">Why It Matters</p>
+        <h2 class="section-title section-title--md" id="why-title">One system, not a chain of vendors.</h2>
+        <p class="lead lead--wide">Collection, hardware, processing and annotation are usually separate vendors stitched together by the customer. Nero operates all of it as one pipeline, so a dataset can be built around a client's specification instead of assembled from whatever each vendor already produces.</p>
+      </div>
+    </section>
+
+    <!-- ============ Final CTA ============ -->
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 class="cta__headline" id="cta-title">See what the pipeline can produce.</h2>
+        <a class="btn btn--ghost btn--lg" href="data-products.html">Explore Data Products <span aria-hidden="true">→</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO DEVELOPMENT</span>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="data-products.html">Data Products</a>
+        <a href="capture-systems.html">Capture Systems</a>
+        <a href="build-a-dataset.html">Build a Dataset</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/nav.js"></script>
+</body>
+</html>

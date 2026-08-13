@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Licensing — Nero Development</title>
+  <meta name="description" content="Three ways to access Nero data: non-exclusive Dataset License, client-exclusive Exclusive Dataset, or an ongoing Continuous Data stream.">
+  <meta name="theme-color" content="#101010">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='4' y='4' width='12' height='12' fill='%23FF7538' transform='rotate(45 10 10)'/%3E%3C/svg%3E">
+
+  <meta property="og:title" content="Licensing — Nero Development">
+  <meta property="og:description" content="Three ways to access Nero data: non-exclusive Dataset License, client-exclusive Exclusive Dataset, or an ongoing Continuous Data stream.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/pages/licensing.css">
+</head>
+<body>
+
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nero Development home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO<span class="brand__name-dim"> DEV.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Product <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="data-engine.html">
+                <span class="nav__item-name">Data Engine</span>
+                <span class="nav__item-desc">Capture to model-ready data</span>
+              </a>
+              <a class="nav__item" href="data-products.html">
+                <span class="nav__item-name">Data Products</span>
+                <span class="nav__item-desc">Sensor, perception &amp; task layers</span>
+              </a>
+              <a class="nav__item" href="capture-systems.html">
+                <span class="nav__item-name">Capture Systems</span>
+                <span class="nav__item-desc">Mono, stereo &amp; custom hardware</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label nav__group-label--active" type="button" aria-haspopup="true" aria-expanded="false">
+              Solutions <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="verticals.html">
+                <span class="nav__item-name">Verticals</span>
+                <span class="nav__item-desc">Warehouse, kitchen, workshop, retail</span>
+              </a>
+              <a class="nav__item" href="licensing.html">
+                <span class="nav__item-name">Licensing</span>
+                <span class="nav__item-desc">Dataset, exclusive &amp; continuous access</span>
+              </a>
+              <a class="nav__item" href="for-businesses.html">
+                <span class="nav__item-name">For Businesses</span>
+                <span class="nav__item-desc">Host capture, get compensated</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Company <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="security-governance.html">
+                <span class="nav__item-name">Security &amp; Governance</span>
+                <span class="nav__item-desc">Consent, redaction, data controls</span>
+              </a>
+              <a class="nav__item" href="company.html">
+                <span class="nav__item-name">Company</span>
+                <span class="nav__item-desc">Mission, team &amp; careers</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="btn btn--primary nav__cta nav__cta--mobile" href="build-a-dataset.html">Build a Dataset</a>
+        </div>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="build-a-dataset.html">Build a Dataset</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Page Intro ============ -->
+    <section class="page-intro">
+      <p class="eyebrow">Licensing</p>
+      <h1 class="page-intro__title">Three ways to access Nero data.</h1>
+      <p class="lead lead--wide">Instead of buying a static dataset, connect your training pipeline to the physical world under a commercial model matched to how your team builds.</p>
+    </section>
+
+    <!-- ============ Tier Cards ============ -->
+    <section class="section" aria-labelledby="tiers-title">
+      <div class="container">
+        <h2 class="sr-only" id="tiers-title">Licensing tiers</h2>
+
+        <div class="model-grid licensing-tier-grid">
+          <div class="model-card licensing-tier-card">
+            <p class="model-card__num mono">01</p>
+            <h3 class="model-card__title">Dataset License</h3>
+            <p class="model-card__text">Non-exclusive access to a Nero dataset, shared across multiple licensees.</p>
+            <ul class="licensing-tier-card__bullets">
+              <li>Fixed dataset snapshot</li>
+              <li>Shared, non-exclusive access</li>
+              <li>Fastest path to training data</li>
+            </ul>
+          </div>
+          <div class="model-card licensing-tier-card">
+            <p class="model-card__num mono">02</p>
+            <h3 class="model-card__title">Exclusive Dataset</h3>
+            <p class="model-card__text">A collection program produced for one client with agreed exclusivity over the resulting data.</p>
+            <ul class="licensing-tier-card__bullets">
+              <li>Custom collection program</li>
+              <li>Exclusive to one client</li>
+              <li>Specification set by client</li>
+            </ul>
+          </div>
+          <div class="model-card model-card--highlight licensing-tier-card">
+            <p class="model-card__num mono">03</p>
+            <h3 class="model-card__title">Continuous Data</h3>
+            <p class="model-card__text">An ongoing stream of newly captured and processed real-world data to an agreed specification.</p>
+            <ul class="licensing-tier-card__bullets">
+              <li>Ongoing delivery, not a one-time drop</li>
+              <li>Specification evolves with the program</li>
+              <li>Best fit for continuously training models</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ How They Differ ============ -->
+    <section class="section section--charcoal" aria-labelledby="differ-title">
+      <div class="container">
+        <p class="eyebrow">How They Differ</p>
+        <h2 class="section-title section-title--md" id="differ-title">Compare the three models side by side.</h2>
+
+        <div class="licensing-table-wrap">
+          <table class="licensing-table">
+            <thead>
+              <tr>
+                <th scope="col">Consideration</th>
+                <th scope="col">Dataset License</th>
+                <th scope="col">Exclusive Dataset</th>
+                <th scope="col" class="licensing-table__highlight-col">Continuous Data</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Access type</td>
+                <td>Non-exclusive</td>
+                <td>Exclusive to client</td>
+                <td>Exclusive, ongoing</td>
+              </tr>
+              <tr>
+                <td>Data freshness</td>
+                <td>Fixed at delivery</td>
+                <td>Fixed at delivery</td>
+                <td>Continuously updated</td>
+              </tr>
+              <tr>
+                <td>Specification control</td>
+                <td>Nero-defined</td>
+                <td>Client-defined</td>
+                <td>Client-defined, evolving</td>
+              </tr>
+              <tr>
+                <td>Best for</td>
+                <td>Fast-start training</td>
+                <td>Proprietary competitive advantage</td>
+                <td>Long-running model development</td>
+              </tr>
+              <tr>
+                <td>Commitment</td>
+                <td>Per-dataset</td>
+                <td>Per-program</td>
+                <td>Ongoing contract</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Final CTA ============ -->
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 class="cta__headline" id="cta-title">Not sure which model fits your program?</h2>
+        <a class="btn btn--primary btn--lg" href="build-a-dataset.html">Talk to us →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO DEVELOPMENT</span>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="data-products.html">Data Products</a>
+        <a href="for-businesses.html">For Businesses</a>
+        <a href="build-a-dataset.html">Build a Dataset</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/nav.js"></script>
+</body>
+</html>

@@ -8,7 +8,12 @@
   --nero-black-1: #101010;
   --nero-black-2: #141414;
   --nero-charcoal-1: #1a1a1a;
+  --nero-charcoal-2: #202020;
+  --nero-charcoal-3: #232323;
+  --nero-charcoal-4: #2b2b2b;
+  --nero-charcoal-5: #2f2f2f;
   --nero-charcoal-6: #343434;
+  --nero-charcoal-7: #3d3d3d;
   --nero-silver: #AFAFAF;
   --nero-white: #FFFFFF;
   --nero-orange: #FF7538;
@@ -263,6 +268,14 @@ a:hover { color: var(--nero-white); }
 
 .nav__cta { flex: none; padding: 10px 18px; font-size: 0.6875rem; letter-spacing: 0.5px; text-transform: uppercase; }
 .nav__cta--mobile { display: none; }
+.nav__group-label--active { color: #fff; }
+
+/* ---------- Page intro (subpage header) ---------- */
+.page-intro { padding: clamp(6rem, 12vw, 7.5rem) var(--container-x) clamp(3rem, 6vw, 5rem); max-width: 1100px; margin-inline: auto; }
+.page-intro__title { font-size: clamp(2.25rem, 4.2vw + 1rem, 4.5rem); font-weight: 100; line-height: 1.05; letter-spacing: -1px; max-width: 18ch; }
+.page-links { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2.25rem; font-size: 0.8125rem; }
+.page-links a { display: inline-block; padding: 12px 22px; border: 1px solid var(--border-subtle); color: #fff; }
+.page-links a:hover { border-color: var(--nero-silver); }
 
 /* ---------- Hero ---------- */
 .hero {

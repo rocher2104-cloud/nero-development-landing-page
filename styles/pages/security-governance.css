@@ -1,0 +1,86 @@
+/* =========================================================
+   Nero Development — Security & Governance
+   ========================================================= */
+
+/* ---------- Pillars ---------- */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--nero-charcoal-6);
+}
+.pillar-card {
+  background: var(--nero-charcoal-1);
+  padding: 2.25rem;
+}
+.pillar-card__num {
+  font-size: var(--type-label);
+  letter-spacing: 1px;
+  color: var(--nero-orange);
+}
+.pillar-card__name {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 14px;
+}
+.pillar-card__desc {
+  font-size: 0.875rem;
+  color: var(--nero-silver);
+  margin-top: 12px;
+  line-height: 1.6;
+}
+
+/* ---------- Data lifecycle controls ---------- */
+.lifecycle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--nero-charcoal-6);
+  margin-top: 3.5rem;
+  list-style: none;
+}
+.lifecycle-row {
+  background: var(--nero-black-1);
+  padding: 24px 28px;
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+}
+.lifecycle-row__stage {
+  flex: 0 0 180px;
+  width: 180px;
+  font-size: 0.8125rem;
+  letter-spacing: 0.5px;
+  color: var(--nero-orange);
+}
+.lifecycle-row__desc {
+  font-size: 0.9375rem;
+  color: var(--nero-silver);
+  line-height: 1.6;
+}
+
+/* ---------- Disclosure note ---------- */
+.disclosure-note {
+  max-width: 900px;
+  margin-inline: auto;
+  text-align: center;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 700px) {
+  .pillar-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .lifecycle-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .lifecycle-row__stage {
+    flex: none;
+    width: auto;
+  }
+}

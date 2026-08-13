@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security &amp; Governance — Nero Development</title>
+  <meta name="description" content="Consent, redaction, encryption and data-lifecycle controls built into Nero's collection pipeline at every stage, not layered on afterward.">
+  <meta name="theme-color" content="#101010">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='4' y='4' width='12' height='12' fill='%23FF7538' transform='rotate(45 10 10)'/%3E%3C/svg%3E">
+
+  <meta property="og:title" content="Security &amp; Governance — Nero Development">
+  <meta property="og:description" content="Consent, redaction, encryption and data-lifecycle controls built into Nero's collection pipeline at every stage, not layered on afterward.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/pages/security-governance.css">
+</head>
+<body>
+
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nero Development home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO<span class="brand__name-dim"> DEV.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Product <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="data-engine.html">
+                <span class="nav__item-name">Data Engine</span>
+                <span class="nav__item-desc">Capture to model-ready data</span>
+              </a>
+              <a class="nav__item" href="data-products.html">
+                <span class="nav__item-name">Data Products</span>
+                <span class="nav__item-desc">Sensor, perception &amp; task layers</span>
+              </a>
+              <a class="nav__item" href="capture-systems.html">
+                <span class="nav__item-name">Capture Systems</span>
+                <span class="nav__item-desc">Mono, stereo &amp; custom hardware</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Solutions <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="verticals.html">
+                <span class="nav__item-name">Verticals</span>
+                <span class="nav__item-desc">Warehouse, kitchen, workshop, retail</span>
+              </a>
+              <a class="nav__item" href="licensing.html">
+                <span class="nav__item-name">Licensing</span>
+                <span class="nav__item-desc">Dataset, exclusive &amp; continuous access</span>
+              </a>
+              <a class="nav__item" href="for-businesses.html">
+                <span class="nav__item-name">For Businesses</span>
+                <span class="nav__item-desc">Host capture, get compensated</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label nav__group-label--active" type="button" aria-haspopup="true" aria-expanded="false">
+              Company <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="security-governance.html">
+                <span class="nav__item-name">Security &amp; Governance</span>
+                <span class="nav__item-desc">Consent, redaction, data controls</span>
+              </a>
+              <a class="nav__item" href="company.html">
+                <span class="nav__item-name">Company</span>
+                <span class="nav__item-desc">Mission, team &amp; careers</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="btn btn--primary nav__cta nav__cta--mobile" href="build-a-dataset.html">Build a Dataset</a>
+        </div>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="build-a-dataset.html">Build a Dataset</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Page Intro ============ -->
+    <div class="page-intro">
+      <p class="eyebrow">Security &amp; Governance</p>
+      <h1 class="page-intro__title">Real-world capture demands real controls.</h1>
+      <p class="lead">Nero collects data inside working businesses, from real people. Consent, privacy and data-handling controls are built into the collection pipeline, not layered on afterward.</p>
+    </div>
+
+    <!-- ============ Pillars ============ -->
+    <section class="section" aria-labelledby="pillars-title">
+      <div class="container">
+        <h2 class="sr-only" id="pillars-title">Security pillars</h2>
+        <div class="pillar-grid">
+          <div class="pillar-card">
+            <p class="pillar-card__num mono">01</p>
+            <h3 class="pillar-card__name">Consent</h3>
+            <p class="pillar-card__desc">Workers appearing in captured footage are informed as part of the site deployment agreement.</p>
+          </div>
+          <div class="pillar-card">
+            <p class="pillar-card__num mono">02</p>
+            <h3 class="pillar-card__name">Redaction</h3>
+            <p class="pillar-card__desc">Faces, identifying marks or other sensitive elements can be redacted per program specification.</p>
+          </div>
+          <div class="pillar-card">
+            <p class="pillar-card__num mono">03</p>
+            <h3 class="pillar-card__name">Access control</h3>
+            <p class="pillar-card__desc">Raw and processed data access is restricted to the systems and personnel a program requires.</p>
+          </div>
+          <div class="pillar-card">
+            <p class="pillar-card__num mono">04</p>
+            <h3 class="pillar-card__name">Encryption</h3>
+            <p class="pillar-card__desc">Data is encrypted in transit from capture hardware and at rest in Nero's pipeline.</p>
+          </div>
+          <div class="pillar-card">
+            <p class="pillar-card__num mono">05</p>
+            <h3 class="pillar-card__name">Retention</h3>
+            <p class="pillar-card__desc">Retention periods for raw capture and processed datasets are set per program agreement.</p>
+          </div>
+          <div class="pillar-card">
+            <p class="pillar-card__num mono">06</p>
+            <h3 class="pillar-card__name">Client data isolation</h3>
+            <p class="pillar-card__desc">Exclusive and continuous programs are isolated from data delivered under non-exclusive licenses.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Data Lifecycle Controls ============ -->
+    <section class="section section--charcoal" aria-labelledby="lifecycle-title">
+      <div class="container">
+        <p class="eyebrow">Data Lifecycle Controls</p>
+        <h2 class="section-title section-title--md" id="lifecycle-title">Controls apply at every stage, not just at delivery.</h2>
+
+        <ol class="lifecycle-list">
+          <li class="lifecycle-row">
+            <p class="lifecycle-row__stage mono">CAPTURE</p>
+            <p class="lifecycle-row__desc">Consent and site agreement in place prior to any recording.</p>
+          </li>
+          <li class="lifecycle-row">
+            <p class="lifecycle-row__stage mono">INGEST</p>
+            <p class="lifecycle-row__desc">Encrypted transfer, integrity verification, access-limited storage.</p>
+          </li>
+          <li class="lifecycle-row">
+            <p class="lifecycle-row__stage mono">PROCESS</p>
+            <p class="lifecycle-row__desc">Redaction applied where the program specification requires it.</p>
+          </li>
+          <li class="lifecycle-row">
+            <p class="lifecycle-row__stage mono">ENRICH / VALIDATE</p>
+            <p class="lifecycle-row__desc">Annotation and QA access limited to authorized personnel and systems.</p>
+          </li>
+          <li class="lifecycle-row">
+            <p class="lifecycle-row__stage mono">DELIVER / RETAIN</p>
+            <p class="lifecycle-row__desc">Delivery under agreed license terms; retention and deletion per contract.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Disclosure Note ============ -->
+    <section class="section" aria-label="Disclosure">
+      <div class="container">
+        <p class="disclosure-note">This page describes Nero's approach to data governance at a program level. Specific certifications, compliance frameworks and audit documentation are provided under NDA as part of a customer or site-host agreement.</p>
+      </div>
+    </section>
+
+    <!-- ============ Final CTA ============ -->
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 class="cta__headline" id="cta-title">Request our data governance documentation.</h2>
+        <a class="btn btn--primary btn--lg" href="build-a-dataset.html">Get in touch →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO DEVELOPMENT</span>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="for-businesses.html">For Businesses</a>
+        <a href="company.html">Company</a>
+        <a href="build-a-dataset.html">Build a Dataset</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/nav.js"></script>
+</body>
+</html>

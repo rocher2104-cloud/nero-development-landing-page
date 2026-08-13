@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verticals — Nero Development</title>
+  <meta name="description" content="Nero designs collection programs by vertical — warehouse, food service, manufacturing, retail, construction — instead of applying one generic capture format everywhere.">
+  <meta name="theme-color" content="#101010">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Crect x='4' y='4' width='12' height='12' fill='%23FF7538' transform='rotate(45 10 10)'/%3E%3C/svg%3E">
+
+  <meta property="og:title" content="Verticals — Nero Development">
+  <meta property="og:description" content="Nero designs collection programs by vertical — warehouse, food service, manufacturing, retail, construction — instead of applying one generic capture format everywhere.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles/fonts.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/pages/verticals.css">
+</head>
+<body>
+
+  <!-- ============ Header / Nav ============ -->
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a class="brand" href="index.html" aria-label="Nero Development home">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO<span class="brand__name-dim"> DEV.</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <div class="nav__menu" id="nav-menu">
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Product <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="data-engine.html">
+                <span class="nav__item-name">Data Engine</span>
+                <span class="nav__item-desc">Capture to model-ready data</span>
+              </a>
+              <a class="nav__item" href="data-products.html">
+                <span class="nav__item-name">Data Products</span>
+                <span class="nav__item-desc">Sensor, perception &amp; task layers</span>
+              </a>
+              <a class="nav__item" href="capture-systems.html">
+                <span class="nav__item-name">Capture Systems</span>
+                <span class="nav__item-desc">Mono, stereo &amp; custom hardware</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label nav__group-label--active" type="button" aria-haspopup="true" aria-expanded="false">
+              Solutions <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="verticals.html">
+                <span class="nav__item-name">Verticals</span>
+                <span class="nav__item-desc">Warehouse, kitchen, workshop, retail</span>
+              </a>
+              <a class="nav__item" href="licensing.html">
+                <span class="nav__item-name">Licensing</span>
+                <span class="nav__item-desc">Dataset, exclusive &amp; continuous access</span>
+              </a>
+              <a class="nav__item" href="for-businesses.html">
+                <span class="nav__item-name">For Businesses</span>
+                <span class="nav__item-desc">Host capture, get compensated</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="nav__group">
+            <button class="nav__group-label" type="button" aria-haspopup="true" aria-expanded="false">
+              Company <span class="nav__caret" aria-hidden="true">▾</span>
+            </button>
+            <div class="nav__dropdown">
+              <a class="nav__item" href="security-governance.html">
+                <span class="nav__item-name">Security &amp; Governance</span>
+                <span class="nav__item-desc">Consent, redaction, data controls</span>
+              </a>
+              <a class="nav__item" href="company.html">
+                <span class="nav__item-name">Company</span>
+                <span class="nav__item-desc">Mission, team &amp; careers</span>
+              </a>
+            </div>
+          </div>
+
+          <a class="btn btn--primary nav__cta nav__cta--mobile" href="build-a-dataset.html">Build a Dataset</a>
+        </div>
+      </nav>
+
+      <a class="btn btn--primary nav__cta" href="build-a-dataset.html">Build a Dataset</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ Page Intro ============ -->
+    <div class="page-intro">
+      <p class="eyebrow">Verticals</p>
+      <h1 class="page-intro__title">Different work. Different data.</h1>
+      <p class="lead lead--wide">Warehouses, kitchens, workshops, retail floors and construction sites each demand different sensor placement, different annotation schemas and different collection protocols. Nero designs collection programs by vertical instead of applying one generic capture format everywhere.</p>
+    </div>
+
+    <!-- ============ Vertical Rows ============ -->
+    <section class="section verticals" aria-label="Verticals we capture">
+      <div class="container">
+        <ol class="vertical-list">
+
+          <li class="vertical-row">
+            <div class="vertical-row__panel" aria-hidden="true">
+              <span class="vertical-row__panel-num mono">01</span>
+            </div>
+            <div class="vertical-row__content">
+              <p class="vertical-row__index mono">01</p>
+              <h2 class="vertical-row__name">Warehouse &amp; Logistics</h2>
+              <p class="vertical-row__desc">Order picking, packing, palletizing and inventory handling captured from the worker's point of view across shifts and sites.</p>
+              <ul class="vertical-tags">
+                <li class="vertical-tag">Picking</li>
+                <li class="vertical-tag">Packing</li>
+                <li class="vertical-tag">Palletizing</li>
+                <li class="vertical-tag">Sorting</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="vertical-row vertical-row--flip">
+            <div class="vertical-row__content">
+              <p class="vertical-row__index mono">02</p>
+              <h2 class="vertical-row__name">Food Service</h2>
+              <p class="vertical-row__desc">Prep, cooking, plating and cleanup tasks across commercial kitchens, captured with attention to tool use and hand-object interaction.</p>
+              <ul class="vertical-tags">
+                <li class="vertical-tag">Prep</li>
+                <li class="vertical-tag">Cooking</li>
+                <li class="vertical-tag">Plating</li>
+                <li class="vertical-tag">Cleaning</li>
+              </ul>
+            </div>
+            <div class="vertical-row__panel" aria-hidden="true">
+              <span class="vertical-row__panel-num mono">02</span>
+            </div>
+          </li>
+
+          <li class="vertical-row">
+            <div class="vertical-row__panel" aria-hidden="true">
+              <span class="vertical-row__panel-num mono">03</span>
+            </div>
+            <div class="vertical-row__content">
+              <p class="vertical-row__index mono">03</p>
+              <h2 class="vertical-row__name">Manufacturing &amp; Repair</h2>
+              <p class="vertical-row__desc">Assembly, tool use, inspection and repair tasks in workshops and light-manufacturing environments.</p>
+              <ul class="vertical-tags">
+                <li class="vertical-tag">Assembly</li>
+                <li class="vertical-tag">Tool use</li>
+                <li class="vertical-tag">Inspection</li>
+                <li class="vertical-tag">Repair</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="vertical-row vertical-row--flip">
+            <div class="vertical-row__content">
+              <p class="vertical-row__index mono">04</p>
+              <h2 class="vertical-row__name">Retail</h2>
+              <p class="vertical-row__desc">Shelving, stocking, checkout and customer-facing tasks captured across store formats.</p>
+              <ul class="vertical-tags">
+                <li class="vertical-tag">Stocking</li>
+                <li class="vertical-tag">Shelving</li>
+                <li class="vertical-tag">Checkout</li>
+                <li class="vertical-tag">Merchandising</li>
+              </ul>
+            </div>
+            <div class="vertical-row__panel" aria-hidden="true">
+              <span class="vertical-row__panel-num mono">04</span>
+            </div>
+          </li>
+
+          <li class="vertical-row">
+            <div class="vertical-row__panel" aria-hidden="true">
+              <span class="vertical-row__panel-num mono">05</span>
+            </div>
+            <div class="vertical-row__content">
+              <p class="vertical-row__index mono">05</p>
+              <h2 class="vertical-row__name">Construction</h2>
+              <p class="vertical-row__desc">On-site trade tasks captured under real jobsite conditions, including tool handling and multi-person coordination.</p>
+              <ul class="vertical-tags">
+                <li class="vertical-tag">Tool handling</li>
+                <li class="vertical-tag">Material handling</li>
+                <li class="vertical-tag">Installation</li>
+                <li class="vertical-tag">Coordination</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ Final CTA ============ -->
+    <section class="section cta" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 class="cta__headline" id="cta-title">Don't see your vertical? We build new collection programs regularly.</h2>
+        <a class="btn btn--primary btn--lg" href="build-a-dataset.html">Build a Dataset →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="brand">
+        <span class="brand__mark" aria-hidden="true"></span>
+        <span class="brand__name">NERO DEVELOPMENT</span>
+      </div>
+      <nav class="site-footer__links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="data-engine.html">Data Engine</a>
+        <a href="capture-systems.html">Capture Systems</a>
+        <a href="build-a-dataset.html">Build a Dataset</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="scripts/nav.js"></script>
+</body>
+</html>
