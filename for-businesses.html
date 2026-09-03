@@ -166,6 +166,95 @@
       </div>
     </section>
 
+    <!-- ============ Compensation Calculator ============ -->
+    <section class="section calculator" aria-labelledby="calculator-title">
+      <div class="container">
+        <p class="eyebrow">Compensation Calculator</p>
+        <h2 class="section-title section-title--md" id="calculator-title">Estimate your payout.</h2>
+        <p class="lead calculator__lead">Enter your schedule below to see the estimated payout for a month.</p>
+
+        <div class="calc-widget">
+          <div class="calc-panel">
+            <div class="calc-row">
+              <p class="calc-row__label">Capture days per week</p>
+              <div class="calc-stepper">
+                <button type="button" class="calc-stepper__btn" id="calc-days-dec" aria-label="Decrease capture days per week">–</button>
+                <span class="calc-stepper__value" id="calc-days-value">5</span>
+                <button type="button" class="calc-stepper__btn" id="calc-days-inc" aria-label="Increase capture days per week">+</button>
+              </div>
+            </div>
+            <div class="calc-divider"></div>
+            <div class="calc-row">
+              <p class="calc-row__label">Hours captured per day</p>
+              <div class="calc-stepper">
+                <button type="button" class="calc-stepper__btn" id="calc-hours-dec" aria-label="Decrease hours captured per day">–</button>
+                <span class="calc-stepper__value" id="calc-hours-value">8</span>
+                <button type="button" class="calc-stepper__btn" id="calc-hours-inc" aria-label="Increase hours captured per day">+</button>
+              </div>
+            </div>
+            <div class="calc-divider"></div>
+            <div class="calc-row">
+              <p class="calc-row__label">Employees / capture systems</p>
+              <div class="calc-stepper">
+                <button type="button" class="calc-stepper__btn" id="calc-employees-dec" aria-label="Decrease employees or capture systems">–</button>
+                <span class="calc-stepper__value" id="calc-employees-value">1</span>
+                <button type="button" class="calc-stepper__btn" id="calc-employees-inc" aria-label="Increase employees or capture systems">+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc-hero" aria-live="polite">
+            <p class="calc-hero__label">Estimated payout · per month</p>
+            <p class="calc-hero__value">$<span id="calc-payout">454.65</span> <span class="calc-hero__unit">USD</span></p>
+            <div class="calc-hero__hr"></div>
+            <div class="calc-hero__meta">
+              <p class="calc-hero__meta-line"><span id="calc-raw-hours">173.2</span> hrs captured</p>
+              <p class="calc-hero__meta-line"><span id="calc-viable-hours">129.9</span> hrs viable (75%)</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="calculator__disclaimer">This is a projection, not a final payout. It assumes 75% of captured hours are viable footage. Actual payouts are issued bi-weekly, in USD, and depend on the viable footage verified each pay period under your collection agreement.</p>
+      </div>
+    </section>
+
+    <!-- ============ Referral Program ============ -->
+    <section class="section section--charcoal referral" aria-labelledby="referral-title">
+      <div class="container">
+        <p class="eyebrow">Referral Program</p>
+        <h2 class="section-title section-title--md" id="referral-title">Earn on the businesses you bring in.</h2>
+        <p class="lead calculator__lead">Refer another business that becomes a Nero collection site, and earn a 5% commission on their payouts for as long as both collection agreements stay active.</p>
+
+        <ol class="steps-grid referral__steps">
+          <li class="step-card">
+            <p class="step-card__num mono">01</p>
+            <p class="step-card__name">Get your code</p>
+            <p class="step-card__desc">Every hosting business is issued a unique referral code tied to its account.</p>
+          </li>
+          <li class="step-card">
+            <p class="step-card__num mono">02</p>
+            <p class="step-card__name">Share it</p>
+            <p class="step-card__desc">Pass your code to a business you think would be a good collection site.</p>
+          </li>
+          <li class="step-card">
+            <p class="step-card__num mono">03</p>
+            <p class="step-card__name">Verified at signup</p>
+            <p class="step-card__desc">The referred business provides your code during its site assessment, before any collection agreement exists.</p>
+          </li>
+          <li class="step-card">
+            <p class="step-card__num mono">04</p>
+            <p class="step-card__name">Earn commission</p>
+            <p class="step-card__desc">You receive 5% of their payouts for as long as both agreements remain active.</p>
+          </li>
+        </ol>
+
+        <div class="referral__note">
+          <p class="referral__note-title">How referrals are verified</p>
+          <p class="referral__note-desc">A referral code can only be attributed during the site-assessment step, before a collection agreement exists — so it applies solely to businesses that haven't already started onboarding with Nero. That attribution is locked in once the referred business's agreement is signed and is what your commission is calculated against each pay period.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ FAQ ============ -->
     <section class="section faq" aria-labelledby="faq-title">
       <div class="container">
@@ -206,7 +295,21 @@
               How is compensation determined?
               <span class="faq-item__icon" aria-hidden="true"></span>
             </summary>
-            <p class="faq-item__answer">Compensation terms are set per site based on the collection program's scope and duration.</p>
+            <p class="faq-item__answer">Businesses are paid per hour of viable footage, disbursed bi-weekly. Exact terms are set per site in the collection agreement.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              Is the payout calculator exact?
+              <span class="faq-item__icon" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-item__answer">No. It projects an estimate only, assuming 75% of captured footage is viable. Actual payouts depend on the footage your site produces and are confirmed in your collection agreement.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__summary">
+              How does the referral program stay fair?
+              <span class="faq-item__icon" aria-hidden="true"></span>
+            </summary>
+            <p class="faq-item__answer">Referral codes are attributed at site assessment, before a collection agreement exists, so a code can't be applied to a business already onboarding with Nero. That attribution is what your 5% commission is calculated against.</p>
           </details>
         </div>
       </div>
@@ -239,5 +342,6 @@
   </footer>
 
   <script src="scripts/nav.js"></script>
+  <script src="scripts/for-businesses.js"></script>
 </body>
 </html>
